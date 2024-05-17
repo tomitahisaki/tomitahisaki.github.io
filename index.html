@@ -4,97 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>職務経歴書[冨田久樹]</title>
+
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <div>
-    <h1>職歴書</h1>
-    <h2>冨田 久樹</h2>
+  <div class="title">
+    <h2>職務経歴書</h2>
+  </div>
+
+  <div class="profile-container">
+    <h3>プロフィール</h3>
+    <div class="profile">
+      <div class="info">
+        <h4>基本情報</h4>
+        <ul> 
+          <li>氏名: 冨田 久樹</li>
+          <li>年齢: 32歳(1992/02/02)</li>
+          <li>住所: 千葉県 柏市</li>
+          <li>E-mail: tomita@wyrd.co.jp</li>
+          <li>最終学歴: 名城大学 理工学部</li>
+          <li>資格: RubyGold, FE</li>
+        </ul>
+      </div>
+      <div class="pr">
+        <h4>自己PR</h4>
+        <p>
+          Ruby on Railsを中心にWebアプリケーションの開発を行っています。<br>
+          フロントエンドも経験があり、Vue.js, React, TypeScriptなどを使った開発も行っています。<br>
+          今後は、フロントエンドのスキルをさらに深め、UI/UXにも興味があります。
+        </p>
+      </div>
+    </div>
   </div>
   
-  <div>  
-    <h3>プロフィール</h3>
-    <ul>
-      <li>年齢: 32歳</li>
-      <li>住所: 千葉県 柏市</li>
-      <li>メールアドレス: tomita@wyrd.co.jp</li>
-      <li>最終学歴: 名城大学 理工学部環境創造学科</li>
-      <li>資格: RubyGold, FE</li>
-    </ul>
-  </div>
-
-  <div>
-    <h3>職務経歴</h3>
-
-    <div>
-      <p>期間: 2024/01 ~ </p>
-      <ul>
-        <li>案件: SaaS(物流DX)アプリの開発</li>
-        <li>業種: 物流</li>
-        <li>使用技術: Ruby on Rails, Vue.js(Vuex), MySQL</li>
-        <li>業務内容: フロントエンド・バックエンドの開発</li>
-      </ul>
-    </div>
-
-    <div>
-      <p>期間: 2023/10 ~ 2023/12</p>
-      <ul>
-        <li>案件: 自社サイトの運用・保守</li>
-        <li>業種: EC</li>
-        <li>使用技術: Remix, React, TypeScript</li>
-        <li>業務内容: 運用保守 アプリ開発</li>
-      </ul>
-    </div>
-
-    <div>
-      <p>期間: 2023/06/ ~ 2023/10</p>
-      <ul>
-        <li>案件: 教育サイトの改修・開発</li>
-        <li>業種: 教育</li>
-        <li>使用技術: Ruby on Rails, React, MySQL, AWS</li>
-        <li>業務内容: フロントエンド・バックエンドの改修(PHPから)、開発</li>
-      </ul>
-    </div>
-
-    <div>
-      <p>期間: 2022/08 ~ 2023/05</p>
-      <ul>
-        <li>RUNTEQ(プログラミングスクール)</li>
-        <li>RoundPlanner: バックパッカー向けの外務省情報取得サイト</li>
-        <li>使用技術: Ruby on Rails, MySQL, AWS S3, Heroku</li>
-      </ul>
-    </div>
-  </div>
-
-  <div>
-    <h3>スキル</h3>
-    <h4>プログラミング言語</h4>
-    <ul>
-      <li>Ruby</li>
-      <li>JavaScript</li>
-      <li>TypeScript</li>
-      <li>React</li>
-      <li>Vue.js</li>
-    </ul>
+  <div class="content">
+    <main>
+      <div class="job-experience">
+        <h3>職務経歴</h3>
+        
+        <div class="job-section">
+          <h4>SaaS(物流DX)アプリの開発</h4>
+          <ul>
+            <li>期間: 2024/01 ~ 現在</li>
+            <li>業種: 物流</li>
+            <li>使用技術: Ruby on Rails, Vue.js(Vuex), MySQL</li>
+            <li>環境: GitHub, Jenkins, Slack, Notion</li>
+            <li>業務内容: フロントエンド・バックエンドの開発</li>
+          </ul>
+        </div>
+        
+        <div class="job-section">
+          <h4>自社サイトの運用・保守</h4>
+          <ul>
+            <li>期間: 2023/10 ~ 2023/12</li>
+            <li>業種: EC</li>
+            <li>使用技術: Remix, React, TypeScript</li>
+            <li>環境: GitHub, Slack, Shopify</li>
+            <li>業務内容: 運用保守 アプリ開発</li>
+          </ul>
+        </div>
+        
+        <div class="job-section">
+          <h4>教育サイトの改修・開発</h4>
+          <ul>
+            <li>期間: 2023/06/ ~ 2023/10</li>
+            <li>業種: 教育</li>
+            <li>使用技術: Ruby on Rails, React, MySQL, AWS</li>
+            <li>環境: GitHub, Slack, Docker</li>
+            <li>業務内容: フロントエンド・バックエンドをPHPからの書き換え<br/>基幹システムへのAPI連携</li>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="job-section">
+          <h4>プログラミング学習(RUNTEQ)</h4>
+          <ul>
+            <li>期間: 2022/08 ~ 2023/05</li>
+            <li>アプリ制作</li>
+            <li>使用技術: Ruby on Rails, MySQL, AWS S3, Heroku</li>
+          </ul>
+        </div>
+      </div>
+    </main>
     
-    <h4>フレームワーク/技術</h4>
-    <ul>
-      <li>Ruby on Rails</li>
-      <li>Next.js</li>
-      <li>Remix</li>
-      <li>MySQL</li>
-    </ul>
-
-    <h4>その他</h4>
-    <ul>
-      <li>Git</li>
-      <li>GitHub</li>
-      <li>Slack</li>
-      <li>VSCode</li>
-      <li>Docker</li>
-      <li>AWS</li>
-      <li>BackLog</li>
-      <li>Notion</li>
-    </ul>
+    <aside>
+      <div class="skill">
+        <h3>スキル</h3>
+        <div class="skill-section">
+          <h4>プログラミング言語</h4>
+          <p>
+            Ruby, JavaScript, TypeScript<br>
+            React, Vue.js
+          </p>
+          
+          <h4>フレームワーク/技術</h4>
+          <p>
+            Ruby on Rails(Ruby), Next.js(React), Remix(React)<br>
+            MySQL, PostgreSQL
+          </p>
+          
+          <h4>その他</h4>
+          <p>
+            Git, GitHub, Docker, AWS, Backlog, Notion, Slack, Gather<br>
+          </p>
+        </div>
+      </div>
+    </aside>
   </div>
 </body>
 </html>
