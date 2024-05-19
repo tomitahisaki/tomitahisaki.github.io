@@ -14,37 +14,31 @@ html {
   margin-bottom: -20px;
 }
 
-.profile-content {
+.profile-content, .job-content {
   margin-left: 0.5em;
 }
 
-.profile {
+.profile, .experience {
   display: grid;
   grid-template-columns: 3fr 5fr;
-  margin: -0.5em 0 0 0.5em;
+  margin: -1.0em 0 0 0.5em;
 }
 
-.job-section {
-  margin-left: 10px;
-}
-
-.skill-section {
-  margin-left: 10px;
+.job-section, .skill-section {
+  margin: -1.0em 0 0 0.5em;
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  margin-left: 10px;
-  margin-top: -10px;
+  margin: -1.0em 0 0 0.5em;
 }
 
-h3 {
+h2 {
   margin-bottom: 10px;
   border-bottom: 2px solid #ccc;
 }
 
 p {
-  margin-left: 10px;
-  margin-top: -10px;
+  margin: -1.0em 0 0 0.5em;
 }
