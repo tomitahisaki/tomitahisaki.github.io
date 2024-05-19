@@ -2,26 +2,10 @@ html {
   font-family: sans-serif;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  margin-left: 5em;
-  margin-right: 5em;
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -20px;
-}
-
-main {
-  flex: 2;
-  margin-right: 10px;
-}
-
-aside {
-  flex: 1;
+.container {
+  max-width: 46.875em;
+  margin: 0 auto;
+  padding: 0 5px;
 }
 
 .title {
@@ -30,15 +14,14 @@ aside {
   margin-bottom: -20px;
 }
 
-.profile {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -15px;
+.profile-content {
+  margin-left: 0.5em;
 }
 
-.info {
-  flex: 1;
-  margin-left: 10px;
+.profile {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  margin: -0.5em 0 0 0.5em;
 }
 
 .job-section {
@@ -46,12 +29,6 @@ aside {
 }
 
 .skill-section {
-  margin-left: 10px;
-}
-
-.pr {
-  flex: 2;
-  word-wrap: break-word;
   margin-left: 10px;
 }
 
