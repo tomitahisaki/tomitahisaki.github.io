@@ -31,13 +31,13 @@ jobs:
     - name: Extract Title
       id: extract
       run: |
-        TITLE=$(node -e "
+        node -e "
           const fs = require('fs');
           const cheerio = require('cheerio');
           const html = fs.readFileSync('${{ github.workspace }}/index.html', 'utf-8');
           const $ = cheerio.load(html);
           console.log($);
-        ")
+        "
     
     - name: Convert HTML to PDF
       run: "node -e \"
