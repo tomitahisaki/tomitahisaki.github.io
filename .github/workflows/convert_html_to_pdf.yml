@@ -1,0 +1,31 @@
+name: Convert HTML to PDF
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 22
+
+    - name: Install Puppeteer
+      run: npm install puppeteer
+
+    - name: Convert HTML to PDF
+      run: "node -e \"const puppeteer = require('puppeteer'); (async () => { const browser = await puppeteer.launch(); const page = await browser.newPage(); await page.goto('file://${{ github.workspace }}/index.html', {waitUntil: 'networkidle2'}); await page.pdf({path: 'output.pdf', format: 'A4'}); await browser.close(); })();\""
+
+    - name: Upload PDF
+      uses: actions/upload-artifact@v2
+      with:
+        name: output
+        path: output.pdf
