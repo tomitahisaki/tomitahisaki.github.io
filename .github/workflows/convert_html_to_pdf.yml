@@ -38,7 +38,6 @@ jobs:
           const $ = cheerio.load(html);
           console.log($);
         ")
-         echo "PDF_TITLE=${TITLE// /_}" >> $GITHUB_ENV
     
     - name: Convert HTML to PDF
       run: "node -e \"
