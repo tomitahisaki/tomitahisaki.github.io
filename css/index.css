@@ -28,6 +28,10 @@ html {
   margin: -1.0em 0 0 0.5em;
 }
 
+.job-detail {
+  margin: 0 0 0 1.0em;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
