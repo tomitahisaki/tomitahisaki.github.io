@@ -25,10 +25,13 @@ jobs:
     - name: install japanese fonts
       run: sudo apt-get install -y fonts-ipafont-gothic
 
+    - name: Install Cheerio
+      run: npm install cheerio
+    
     - name: Extract Title
       id: extract
       run: |
-        TITLE=$(node -e "const fs = require('fs'); const cheerio = require('cheerio'); const html = fs.readFileSync('${{ github.workspace }}/index.html'); const $ = cheerio.load(html); console.log($('title').text());")
+        TITLE=$(node -e "const fs = require('fs'); const cheerio = require('cheerio'); const html = fs.readFileSync('${{ github.workspace }}/index.html'); const $ = cheerio.load(html); process.stdout.write($('title').text());")
         echo "PDF_TITLE=${TITLE// /_}" >> $GITHUB_ENV
     
     - name: Convert HTML to PDF
