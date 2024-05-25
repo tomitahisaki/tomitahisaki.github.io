@@ -31,14 +31,29 @@ jobs:
     - name: Extract Title
       id: extract
       run: |
-        TITLE=$(node -e "const fs = require('fs'); const cheerio = require('cheerio'); const html = fs.readFileSync('${{ github.workspace }}/index.html'); const $ = cheerio.load(html); process.stdout.write($('title').text());")
+        TITLE=$(node -e "
+          const fs = require('fs');
+          const cheerio = require('cheerio');
+          const html = fs.readFileSync('${{ github.workspace }}/index.html', 'utf-8');
+          const $ = cheerio.load(html);
+          console.log($('title').text());
         echo "PDF_TITLE=${TITLE// /_}" >> $GITHUB_ENV
     
     - name: Convert HTML to PDF
-      run: "node -e \"const puppeteer = require('puppeteer'); (async () => { const browser = await puppeteer.launch(); const page = await browser.newPage(); await page.goto('file://${{ github.workspace }}/index.html', {waitUntil: 'networkidle2'}); await page.pdf({path: '${{ env.PDF_TITLE }}.pdf', format: 'A4'}); await browser.close(); })();\""
+      run: "node -e \"
+        const puppeteer = require('puppeteer');
+        (
+          async () => {
+            const browser = await puppeteer.launch();
+            const page = await browser.newPage();
+            await page.goto('file://${{ github.workspace }}/index.html', {waitUntil: 'networkidle2'});
+            await page.pdf({path: 'output.pdf', format: 'A4'});
+            await browser.close();
+          }
+        )();\""
     
     - name: Upload PDF
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ env.PDF_TITLE }}
-        path: ${{ env.PDF_TITLE }}.pdf
+        name: output
+        path: output.pdf
