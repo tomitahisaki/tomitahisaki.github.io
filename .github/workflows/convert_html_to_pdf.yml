@@ -31,6 +31,7 @@ jobs:
     - name: Extract Title
       id: extract
       run: |
+        TITLE=$(
         node -e "
           const fs = require('fs');
           const cheerio = require('cheerio');
@@ -38,8 +39,8 @@ jobs:
           const $ = cheerio.load(html);
           const titleHtml = $.html('head title');
           const titleText = cheerio.load(titleHtml)('title').text();
-          console.log(titleText);
-        "
+        ")
+        echo "PDF_TITLE=${TITLE// /_}" >> $GITHUB_ENV
     
     - name: Convert HTML to PDF
       run: "node -e \"
@@ -49,7 +50,7 @@ jobs:
             const browser = await puppeteer.launch();
             const page = await browser.newPage();
             await page.goto('file://${{ github.workspace }}/index.html', {waitUntil: 'networkidle2'});
-            await page.pdf({path: 'output.pdf', format: 'A4'});
+            await page.pdf({path: '${{ env.PDF_TITLE}}.pdf', format: 'A4'});
             await browser.close();
           }
         )();\""
@@ -57,5 +58,11 @@ jobs:
     - name: Upload PDF
       uses: actions/upload-artifact@v2
       with:
-        name: output
-        path: output.pdf
+        name: ${{ env.PDF_TITLE}}
+        path: ${{ env.PDF_TITLE}}.pdf
+
+
+
+
+
+
