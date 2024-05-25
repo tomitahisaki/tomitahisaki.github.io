@@ -36,7 +36,7 @@ jobs:
           const cheerio = require('cheerio');
           const html = fs.readFileSync('${{ github.workspace }}/index.html', 'utf-8');
           const $ = cheerio.load(html);
-          console.log($.html('head'));
+          console.log($.html('head title'));
         "
     
     - name: Convert HTML to PDF
