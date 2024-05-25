@@ -34,7 +34,7 @@ jobs:
         TITLE=$(node -e "
           const fs = require('fs');
           const cheerio = require('cheerio');
-          const html = fs.readFileSync('${{ github.workspace }}/index.html', 'utf-8');
+          const html = fs.readFileSync('file://${{ github.workspace }}/index.html', 'utf-8');
           const $ = cheerio.load(html);
           console.log($('title').text());
         ")
