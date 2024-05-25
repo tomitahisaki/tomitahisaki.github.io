@@ -37,6 +37,7 @@ jobs:
           const html = fs.readFileSync('${{ github.workspace }}/index.html', 'utf-8');
           const $ = cheerio.load(html);
           console.log($('title').text());
+        ")
         echo "PDF_TITLE=${TITLE// /_}" >> $GITHUB_ENV
     
     - name: Convert HTML to PDF
