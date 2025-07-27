@@ -1,47 +1,66 @@
 export interface ResumeData {
-  title: string;
-  profile: {
+  header: {
+    name: string;
     title: string;
-    basicInfo: {
-      title: string;
-      name: string;
-      age: string;
-      location: string;
-      email: string;
-      education: string;
-      certifications: string;
-    };
-    selfIntroduction: {
-      title: string;
-      content: string;
-    };
+    email: string;
+    phone: string;
+    location: string;
+    linkedin: string;
+    github: string;
   };
-  workExperience: {
+  summary: {
     title: string;
-    skills: {
+    content: string;
+  };
+  skills: {
+    title: string;
+    categories: Array<{
+      name: string;
+      items: string[];
+    }>;
+  };
+  experience: {
+    title: string;
+    list: Array<{
+      position: string;
+      company: string;
+      period: string;
+      location: string;
+      responsibilities: string[];
+    }>;
+  };
+  projects: {
+    title: string;
+    list: Array<{
+      name: string;
+      period: string;
+      technologies: string[];
+      description: string;
+      achievements: string[];
+    }>;
+  };
+  education: {
+    title: string;
+    degrees: Array<{
+      degree: string;
+      institution: string;
+      period: string;
+      location: string;
+    }>;
+    certifications: Array<{
+      name: string;
+      issuer: string;
+      date: string;
+    }>;
+  };
+  publications: {
+    title: string;
+    list: Array<{
       title: string;
-      programmingLanguages: {
-        title: string;
-        content: string;
-      };
-      frameworks: {
-        title: string;
-        content: string;
-      };
-      others: {
-        title: string;
-        content: string;
-      };
-    };
-    projects: {
-      title: string;
-      list: Array<{
-        title: string;
-        period: string;
-        industry: string;
-        responsibilities: string;
-        details: string;
-      }>;
-    };
+      type: string;
+      date: string;
+      url?: string;
+      description: string;
+    }>;
   };
 }

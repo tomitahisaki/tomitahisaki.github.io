@@ -13,7 +13,7 @@ function App() {
     // HTMLのlang属性も更新
     document.documentElement.lang = language;
     // タイトルも更新
-    document.title = currentData.title + (language === 'ja' ? ' 冨田久樹' : ' Hisaki Tomita');
+    document.title = language === 'ja' ? '履歴書 - 冨田久樹' : 'Resume - Hisaki Tomita';
   };
 
   return (
