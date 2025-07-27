@@ -1,5 +1,5 @@
 import React from 'react';
-import { ResumeData } from '../data/content';
+import { ResumeData } from '../types/resume';
 
 interface ProfileProps {
   data: ResumeData['profile'];

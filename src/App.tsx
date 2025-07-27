@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Resume } from './components/Resume';
-import { jaData, enData } from './data/content';
+import { jaData, enData } from './locales';
 import './App.css';
 
 function App() {
