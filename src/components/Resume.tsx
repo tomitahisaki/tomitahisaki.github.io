@@ -2,7 +2,7 @@ import React from 'react';
 import { LanguageToggle } from './LanguageToggle';
 import { Profile } from './Profile';
 import { WorkExperience } from './WorkExperience';
-import { ResumeData } from '../data/content';
+import { ResumeData } from '../types/resume';
 
 interface ResumeProps {
   data: ResumeData;
