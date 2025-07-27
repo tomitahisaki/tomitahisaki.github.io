@@ -50,6 +50,36 @@ body {
   max-width: 100%;
 }
 
+/* Social Link Hover Effects */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  background-color: #e9ecef;
+  transform: translateY(-0.1em);
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.social-link:hover .linkedin-icon {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%)
+    hue-rotate(197deg) brightness(104%) contrast(97%) !important;
+}
+
+.social-link:hover .github-icon {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(95%) contrast(80%) !important;
+}
+
 .resume-main {
   display: flex;
   flex-direction: column;

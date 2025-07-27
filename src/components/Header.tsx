@@ -1,5 +1,6 @@
 import React from 'react';
 import { ResumeData } from '../types/resume';
+import { LinkedInIcon, GitHubIcon } from './Icons';
 
 interface HeaderProps {
   data: ResumeData['header'];
@@ -19,24 +20,12 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
             {data.email}
           </a>
         </div>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>Phone:</span>
-          <span>{data.phone}</span>
-        </div>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>Location:</span>
-          <span>{data.location}</span>
-        </div>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>LinkedIn:</span>
-          <a href={data.linkedin} target="_blank" rel="noopener noreferrer" style={styles.contactLink}>
-            LinkedIn Profile
+        <div style={styles.socialLinks}>
+          <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
+            <LinkedInIcon className="linkedin-icon" />
           </a>
-        </div>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>GitHub:</span>
-          <a href={data.github} target="_blank" rel="noopener noreferrer" style={styles.contactLink}>
-            GitHub Profile
+          <a href={data.github} target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
+            <GitHubIcon className="github-icon" />
           </a>
         </div>
       </div>
@@ -66,9 +55,10 @@ const styles = {
     color: '#666',
   },
   contactSection: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(15em, 1fr))',
-    gap: '0.8em',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '2em',
+    flexWrap: 'wrap' as const,
   },
   contactItem: {
     display: 'flex',
@@ -83,5 +73,10 @@ const styles = {
   contactLink: {
     color: '#0066cc',
     textDecoration: 'none',
+  },
+  socialLinks: {
+    display: 'flex',
+    gap: '1em',
+    alignItems: 'center',
   },
 };
