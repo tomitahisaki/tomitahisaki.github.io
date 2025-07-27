@@ -1,79 +1,72 @@
-html {
-  font-family: sans-serif;
-}
-
-.container {
-  max-width: 46.875em;
-  margin: 0 auto;
-  padding: 0 5px;
-}
-
-/* 言語切り替えボタンのスタイル */
-.language-toggle {
-  display: flex;
-  justify-content: flex-end;
-  margin: 20px 0 10px 0;
-  gap: 10px;
-}
-
-.lang-btn {
-  padding: 8px 16px;
-  border: 2px solid #007bff;
-  background-color: #fff;
-  color: #007bff;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.lang-btn:hover {
-  background-color: #f8f9fa;
-}
-
-.lang-btn.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.title {
-  margin-top: 20px;
-  font-size: 1.5em;
-  margin-bottom: -20px;
-}
-
-.profile-content,
-.job-content {
-  margin-left: 0.5em;
-}
-
-.profile,
-.experience {
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  margin: -1em 0 0 0.5em;
-}
-
-.job-section,
-.skill-section {
-  margin: -1em 0 0 0.5em;
-}
-
-.job-detail {
-  margin: 0 0 0 1em;
-}
-
-ul {
-  list-style-type: none;
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
   padding: 0;
-  margin: -1em 0 0 0.5em;
+  font-size: 1em;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-h2 {
-  margin-bottom: 10px;
-  border-bottom: 2px solid #ccc;
+/* Container */
+.container {
+  max-width: 50em;
+  margin: 0 auto;
+  padding: 1.5em;
+  background: white;
+  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
 }
 
-p {
-  margin: -1em 0 0 0.5em;
+/* Language Toggle */
+.language-toggle {
+  text-align: right;
+  margin-bottom: 1.5em;
+}
+
+.language-button {
+  background: none;
+  border: 0.1em solid #ddd;
+  padding: 0.4em 0.8em;
+  margin-left: 0.5em;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: all 0.2s ease;
+}
+
+.language-button:hover {
+  background-color: #f0f0f0;
+}
+
+.language-button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Resume Layout */
+.resume {
+  max-width: 100%;
+}
+
+.resume-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 48em) {
+  .container {
+    margin: 0;
+    padding: 1em;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 30em) {
+  .container {
+    padding: 0.8em;
+  }
 }

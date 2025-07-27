@@ -1,7 +1,12 @@
 import React from 'react';
 import { LanguageToggle } from './LanguageToggle';
-import { Profile } from './Profile';
-import { WorkExperience } from './WorkExperience';
+import { Header } from './Header';
+import { Summary } from './Summary';
+import { Skills } from './Skills';
+import { Experience } from './Experience';
+import { Projects } from './Projects';
+import { Education } from './Education';
+import { Publications } from './Publications';
 import { ResumeData } from '../types/resume';
 
 interface ResumeProps {
@@ -22,12 +27,17 @@ export const Resume: React.FC<ResumeProps> = ({
         onLanguageChange={onLanguageChange}
       />
       
-      <div className="title">
-        <h1>{data.title}</h1>
+      <div className="resume">
+        <Header data={data.header} />
+        <div className="resume-main">
+          <Summary data={data.summary} />
+          <Skills data={data.skills} />
+          <Experience data={data.experience} />
+          <Projects data={data.projects} />
+          <Education data={data.education} />
+          <Publications data={data.publications} />
+        </div>
       </div>
-      
-      <Profile data={data.profile} />
-      <WorkExperience data={data.workExperience} />
     </div>
   );
 };

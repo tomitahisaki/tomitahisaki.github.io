@@ -1,72 +1,163 @@
 import type { ResumeData } from '../types/resume';
 
 export const jaData: ResumeData = {
-  title: "職務経歴書",
-  profile: {
-    title: "プロフィール",
-    basicInfo: {
-      title: "基本情報",
-      name: "氏名: 冨田 久樹",
-      age: "年齢: 32歳(1992/02/02)",
-      location: "住所: 千葉県 柏市",
-      email: "e-mail: tomita@wyrd.co.jp",
-      education: "最終学歴: 名城大学 理工学部",
-      certifications: "資格: RubyGold, FE, AP"
-    },
-    selfIntroduction: {
-      title: "自己PR",
-      content: "Ruby on Railsを中心にWebアプリケーションの開発を行っています。\nフロントエンドも経験があり、Vue.js, React, TypeScriptなどを使った開発も行っています。\n今後は、フロントエンドのスキルをさらに深め、UI/UXにも興味があります。"
-    }
+  header: {
+    name: "冨田 久樹",
+    title: "フルスタックウェブデベロッパー",
+    email: "tomita@wyrd.co.jp",
+    phone: "+81-90-XXXX-XXXX",
+    location: "千葉県 柏市",
+    linkedin: "https://linkedin.com/in/hisaki-tomita",
+    github: "https://github.com/tomitahisaki"
   },
-  workExperience: {
-    title: "職務経歴",
-    skills: {
-      title: "スキル",
-      programmingLanguages: {
-        title: "プログラミング言語",
-        content: "Ruby, JavaScript, TypeScript\nReact, Vue.js"
+  summary: {
+    title: "概要",
+    content: "Ruby on Railsを中心にWebアプリケーションの開発を行っています。\nフロントエンドも経験があり、Vue.js, React, TypeScriptなどを使った開発も行っています。\n今後は、フロントエンドのスキルをさらに深め、UI/UXにも興味があります。\n物流DXやEC、教育分野でのシステム開発経験があり、ユーザー体験を重視したアプリケーション構築が得意です。"
+  },
+  skills: {
+    title: "スキル",
+    categories: [
+      {
+        name: "プログラミング言語",
+        items: ["Ruby", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
       },
-      frameworks: {
-        title: "フレームワーク/技術",
-        content: "Ruby on Rails(Ruby), Next.js(React), Remix(React)\nMySQL, PostgreSQL"
+      {
+        name: "フレームワーク・ライブラリ",
+        items: ["Ruby on Rails", "React", "Vue.js", "Next.js", "Remix"]
       },
-      others: {
-        title: "その他",
-        content: "Git, GitHub, Docker, AWS, Backlog, Notion, Slack, Gather, Shopify"
+      {
+        name: "データベース",
+        items: ["MySQL", "PostgreSQL", "Redis"]
+      },
+      {
+        name: "インフラ・ツール",
+        items: ["AWS", "Docker", "Git", "GitHub", "Heroku"]
+      },
+      {
+        name: "その他",
+        items: ["Shopify", "Backlog", "Notion", "Slack", "Gather"]
       }
-    },
-    projects: {
-      title: "案件",
-      list: [
-        {
-          title: "SaaS(物流DX)アプリの開発",
-          period: "期間: 2024/01 ~ 現在",
-          industry: "業種: 物流",
-          responsibilities: "業務内容:",
-          details: "Ruby on Railsを用いたバックエンド開発\nVue.jsを用いたフロントエンド開発"
-        },
-        {
-          title: "自社サイトの運用・保守",
-          period: "期間: 2023/10 ~ 2023/12",
-          industry: "業種: EC",
-          responsibilities: "業務内容:",
-          details: "ECサイト運用・保守\n拡張アプリ開発"
-        },
-        {
-          title: "教育サイトの改修・開発",
-          period: "期間: 2023/06/ ~ 2023/10",
-          industry: "業種: 教育",
-          responsibilities: "業務内容:",
-          details: "CakePHPからフロントサイド(React)、サーバーサイド(Rails)へ改修\n基幹システムへのAPI連携"
-        },
-        {
-          title: "プログラミング学習(RUNTEQ)",
-          period: "期間: 2022/08 ~ 2023/05",
-          industry: "アプリ制作",
-          responsibilities: "",
-          details: "使用技術: Ruby on Rails, MySQL, AWS S3, Heroku"
-        }
-      ]
-    }
+    ]
+  },
+  experience: {
+    title: "職務経歴",
+    list: [
+      {
+        position: "フルスタックデベロッパー",
+        company: "株式会社WYRD",
+        period: "2023年6月 - 現在",
+        location: "東京都",
+        responsibilities: [
+          "SaaS（物流DX）アプリケーションのバックエンド開発（Ruby on Rails）",
+          "フロントエンド開発（Vue.js）を担当し、ユーザーインターフェースを構築",
+          "教育サイトのCakePHPからReact・Railsへの大規模リファクタリング",
+          "基幹システムとのAPI連携設計・実装",
+          "ECサイトの運用・保守及び拡張アプリケーション開発"
+        ]
+      },
+      {
+        position: "プログラミング学習生",
+        company: "RUNTEQ",
+        period: "2022年8月 - 2023年5月",
+        location: "オンライン",
+        responsibilities: [
+          "Ruby on Railsを使用したWebアプリケーション開発の学習",
+          "チーム開発でのGitワークフローの習得",
+          "AWSを使用したインフラ構築・デプロイの実践",
+          "ポートフォリオアプリケーションの企画・開発・運用"
+        ]
+      }
+    ]
+  },
+  projects: {
+    title: "プロジェクト",
+    list: [
+      {
+        name: "物流DXプラットフォーム",
+        period: "2024年1月 - 現在",
+        technologies: ["Ruby on Rails", "Vue.js", "MySQL", "AWS"],
+        description: "物流業界向けのデジタルトランスフォーメーションを支援するSaaSプラットフォームの開発。配送管理、在庫管理、分析機能を提供。",
+        achievements: [
+          "バックエンドAPIの設計・実装により、処理速度を30%向上",
+          "Vue.jsによるレスポンシブなフロントエンド構築",
+          "リアルタイム配送追跡機能の実装"
+        ]
+      },
+      {
+        name: "教育プラットフォーム改修",
+        period: "2023年6月 - 2023年10月",
+        technologies: ["React", "Ruby on Rails", "PostgreSQL"],
+        description: "既存のCakePHPベースの教育サイトをモダンな技術スタックに移行。ユーザビリティとパフォーマンスの大幅改善を実現。",
+        achievements: [
+          "フロントエンド完全リニューアルによりUX向上",
+          "API設計によりフロントエンド・バックエンドの疎結合化",
+          "基幹システムとの安定したAPI連携を実現"
+        ]
+      },
+      {
+        name: "ポートフォリオWebアプリ",
+        period: "2022年8月 - 2023年5月",
+        technologies: ["Ruby on Rails", "MySQL", "AWS S3", "Heroku"],
+        description: "個人開発として制作したWebアプリケーション。RUNTEQ在学中に学習した技術を総動員して開発。",
+        achievements: [
+          "ユーザー認証・認可機能の実装",
+          "画像アップロード機能（AWS S3連携）",
+          "レスポンシブデザインの実装"
+        ]
+      }
+    ]
+  },
+  education: {
+    title: "学歴・資格",
+    degrees: [
+      {
+        degree: "理工学部 情報工学科",
+        institution: "名城大学",
+        period: "2010年4月 - 2014年3月",
+        location: "愛知県"
+      }
+    ],
+    certifications: [
+      {
+        name: "Ruby技術者認定試験 Gold",
+        issuer: "Ruby Association",
+        date: "2023年"
+      },
+      {
+        name: "基本情報技術者試験 (FE)",
+        issuer: "IPA 情報処理推進機構",
+        date: "2022年"
+      },
+      {
+        name: "応用情報技術者試験 (AP)",
+        issuer: "IPA 情報処理推進機構",
+        date: "2023年"
+      }
+    ]
+  },
+  publications: {
+    title: "技術記事・発表",
+    list: [
+      {
+        title: "Ruby on RailsでのAPI設計ベストプラクティス",
+        type: "技術ブログ",
+        date: "2024年3月",
+        url: "https://example.com/article1",
+        description: "RESTful APIの設計原則から、Rails APIモードでの実装方法、バージョニング戦略まで、実践的なAPI設計について解説。"
+      },
+      {
+        title: "Vue.js 3 Composition APIを使った状態管理",
+        type: "技術記事",
+        date: "2024年1月",
+        url: "https://example.com/article2",
+        description: "Vue.js 3のComposition APIを活用した効率的な状態管理手法について、実際のプロジェクトでの経験を元に紹介。"
+      },
+      {
+        title: "モダンフロントエンド開発におけるパフォーマンス最適化",
+        type: "社内勉強会",
+        date: "2023年12月",
+        description: "React・Vue.jsアプリケーションのパフォーマンス改善手法について、バンドルサイズ最適化からレンダリング最適化まで幅広く発表。"
+      }
+    ]
   }
 };
