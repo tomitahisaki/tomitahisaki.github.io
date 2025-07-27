@@ -5,13 +5,16 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/',
+  server: {
+    port: 3000,
+    open: true,
+    fs: {
+      strict: false
+    }
+  },
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
-  },
-  server: {
-    port: 3000,
-    open: true,
   },
 })
