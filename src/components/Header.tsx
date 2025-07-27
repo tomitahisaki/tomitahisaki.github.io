@@ -1,6 +1,6 @@
 import React from 'react';
 import { ResumeData } from '../types/resume';
-import { LinkedInIcon, GitHubIcon } from './Icons';
+import { LinkedInIcon, GitHubIcon, EmailIcon } from './Icons';
 
 interface HeaderProps {
   data: ResumeData['header'];
@@ -8,19 +8,16 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ data }) => {
   return (
-    <header style={styles.header}>
-      <div style={styles.nameSection}>
+    <header style={styles.header} className="header-mobile-responsive">
+      <div style={styles.leftSection} className="left-section">
         <h1 style={styles.name}>{data.name}</h1>
         <h2 style={styles.title}>{data.title}</h2>
       </div>
-      <div style={styles.contactSection}>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>Email:</span>
-          <a href={`mailto:${data.email}`} style={styles.contactLink}>
-            {data.email}
+      <div style={styles.rightSection} className="right-section">
+        <div style={styles.iconLinks}>
+          <a href={`mailto:${data.email}`} className="social-link" title="Email">
+            <EmailIcon className="email-icon" />
           </a>
-        </div>
-        <div style={styles.socialLinks}>
           <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
             <LinkedInIcon className="linkedin-icon" />
           </a>
@@ -38,14 +35,20 @@ const styles = {
     padding: '2em',
     borderBottom: '0.1em solid #e0e0e0',
     marginBottom: '2em',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexWrap: 'wrap' as const,
+    gap: '1.5em',
   },
-  nameSection: {
-    marginBottom: '1.5em',
+  leftSection: {
+    flex: 1,
+    minWidth: '15em',
   },
   name: {
     fontSize: '2.5em',
     fontWeight: 'bold',
-    margin: '0 0 0.5em 0',
+    margin: '0 0 0.3em 0',
     color: '#333',
   },
   title: {
@@ -54,27 +57,11 @@ const styles = {
     margin: '0',
     color: '#666',
   },
-  contactSection: {
+  rightSection: {
     display: 'flex',
     alignItems: 'center',
-    gap: '2em',
-    flexWrap: 'wrap' as const,
   },
-  contactItem: {
-    display: 'flex',
-    flexDirection: 'column' as const,
-    gap: '0.3em',
-  },
-  contactLabel: {
-    fontSize: '0.9em',
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  contactLink: {
-    color: '#0066cc',
-    textDecoration: 'none',
-  },
-  socialLinks: {
+  iconLinks: {
     display: 'flex',
     gap: '1em',
     alignItems: 'center',
