@@ -10,7 +10,7 @@ export const enData: ResumeData = {
   },
   summary: {
     title: "Summary",
-    content: "I develop web applications mainly using Ruby on Rails.\nI also have experience in frontend development using Vue.js, React, and TypeScript.\nI'm looking to further develop my frontend skills and am interested in UI/UX.\nI have experience in system development for logistics DX, e-commerce, and education sectors, with a focus on user experience-centered application development."
+    content: "Contributed to the redevelopment of a tutoring service platform, migrating from CakePHP to Ruby on Rails and React.js, and built integration APIs to connect with a core business system. Improved operational efficiency by proactively identifying unclear requirements and working closely with managers to define specifications early in the development cycle. In a logistics DX project, developed and extended key features and implemented external API integrations using Rails, Vue.js, and React.js. Created well-scoped tasks and optimized pull request granularity, which led to reduced review time and smoother team collaboration. Also involved in the maintenance and improvement of an e-commerce site built with Shopify. Outside of work, strengthened technical fundamentals through blogging, obtaining certifications, and building hobby projects with Raspberry Pi.",
   },
   skills: {
     title: "Skills",
