@@ -35,8 +35,6 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
 const styles = {
   header: {
     padding: '1em',
-    borderBottom: '0.2em solid #e0e0e0',
-    marginBottom: '2em',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',

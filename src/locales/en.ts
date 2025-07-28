@@ -3,10 +3,8 @@ import type { ResumeData } from '../types/resume';
 export const enData: ResumeData = {
   header: {
     name: "Hisaki Tomita",
-    title: "Full Stack Web Developer",
-    email: "tomita@wyrd.co.jp",
-    phone: "+81-90-XXXX-XXXX",
-    location: "Kashiwa, Chiba, Japan",
+    title: "Web Developer",
+    email: "alltimelow2011@gmail.com",
     linkedin: "https://linkedin.com/in/hisaki-tomita",
     github: "https://github.com/tomitahisaki"
   },

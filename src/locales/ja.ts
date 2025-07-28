@@ -3,10 +3,8 @@ import type { ResumeData } from '../types/resume';
 export const jaData: ResumeData = {
   header: {
     name: "冨田 久樹",
-    title: "フルスタックウェブデベロッパー",
-    email: "tomita@wyrd.co.jp",
-    phone: "+81-90-XXXX-XXXX",
-    location: "千葉県 柏市",
+    title: "ウェブデベロッパー",
+    email: "alltimelow2011@gmail.com",
     linkedin: "https://linkedin.com/in/hisaki-tomita",
     github: "https://github.com/tomitahisaki"
   },
