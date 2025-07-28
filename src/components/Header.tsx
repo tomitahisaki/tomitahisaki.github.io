@@ -10,8 +10,10 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
   return (
     <header style={styles.header} className="header-mobile-responsive">
       <div style={styles.leftSection} className="left-section">
-        <h1 style={styles.name}>{data.name}</h1>
-        <h2 style={styles.title}>{data.title}</h2>
+        <div style={styles.nameTitle} className="name-title-mobile">
+          <h1 style={styles.name}>{data.name}</h1>
+          <p style={styles.title}>{data.title}</p>
+        </div>
       </div>
       <div style={styles.rightSection} className="right-section">
         <div style={styles.iconLinks}>
@@ -32,8 +34,8 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
 
 const styles = {
   header: {
-    padding: '2em',
-    borderBottom: '0.1em solid #e0e0e0',
+    padding: '1em',
+    borderBottom: '0.2em solid #e0e0e0',
     marginBottom: '2em',
     display: 'flex',
     justifyContent: 'space-between',
@@ -45,17 +47,24 @@ const styles = {
     flex: 1,
     minWidth: '15em',
   },
+  nameTitle: {
+    display: 'flex',
+    alignItems: 'baseline',
+    gap: '1em',
+    flexWrap: 'wrap' as const,
+  },
   name: {
     fontSize: '2.5em',
     fontWeight: 'bold',
-    margin: '0 0 0.3em 0',
+    margin: '0',
     color: '#333',
   },
   title: {
-    fontSize: '1.5em',
-    fontWeight: '300',
+    fontSize: '1.1em',
+    fontWeight: '400',
     margin: '0',
-    color: '#666',
+    color: '#777',
+    lineHeight: 1.3,
   },
   rightSection: {
     display: 'flex',
