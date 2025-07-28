@@ -17,21 +17,13 @@ export interface ResumeData {
       items: string[];
     }>;
   };
-  experience: {
-    title: string;
-    list: Array<{
-      position: string;
-      company: string;
-      period: string;
-      location: string;
-      responsibilities: string[];
-    }>;
-  };
   projects: {
     title: string;
     list: Array<{
       name: string;
       period: string;
+      company?: string;
+      position?: string;
       technologies: string[];
       description: string;
       achievements: string[];

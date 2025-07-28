@@ -3,7 +3,6 @@ import { LanguageToggle } from './LanguageToggle';
 import { Header } from './Header';
 import { Summary } from './Summary';
 import { Skills } from './Skills';
-import { Experience } from './Experience';
 import { Projects } from './Projects';
 import { Education } from './Education';
 import { Publications } from './Publications';
@@ -32,7 +31,6 @@ export const Resume: React.FC<ResumeProps> = ({
         <div className="resume-main">
           <Summary data={data.summary} />
           <Skills data={data.skills} />
-          <Experience data={data.experience} />
           <Projects data={data.projects} />
           <Education data={data.education} />
           <Publications data={data.publications} />

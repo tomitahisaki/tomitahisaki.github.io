@@ -34,67 +34,65 @@ export const enData: ResumeData = {
       }
     ]
   },
-  experience: {
-    title: "Work Experience",
-    list: [
-      {
-        position: "Full Stack Developer",
-        company: "WYRD Inc.",
-        period: "June 2023 - Present",
-        location: "Tokyo, Japan",
-        responsibilities: [
-          "Backend development for SaaS (Logistics DX) applications using Ruby on Rails",
-          "Frontend development using Vue.js to build user interfaces",
-          "Large-scale refactoring of education site from CakePHP to React & Rails",
-          "API integration design and implementation with core systems",
-          "E-commerce site operation, maintenance, and extension app development"
-        ]
-      },
-      {
-        position: "Programming Student",
-        company: "RUNTEQ",
-        period: "August 2022 - May 2023",
-        location: "Online",
-        responsibilities: [
-          "Learning web application development using Ruby on Rails",
-          "Acquiring Git workflow skills in team development",
-          "Practicing infrastructure construction and deployment using AWS",
-          "Planning, developing, and operating portfolio applications"
-        ]
-      }
-    ]
-  },
   projects: {
-    title: "Projects",
+    title: "Work Experience & Projects",
     list: [
       {
-        name: "Logistics DX Platform",
-        period: "January 2024 - Present",
+        name: "Logistics DX SaaS Development | WYRD Inc.",
+        period: "June 2023 - Present",
+        company: "WYRD Inc.",
+        position: "Full Stack Developer",
         technologies: ["Ruby on Rails", "Vue.js", "MySQL", "AWS"],
-        description: "Development of a SaaS platform supporting digital transformation in the logistics industry. Provides delivery management, inventory management, and analytics functions.",
+        description: "Development of a SaaS platform supporting digital transformation in the logistics industry. Responsible for backend development using Ruby on Rails and frontend development using Vue.js to build user interfaces.",
         achievements: [
+          "Backend development for SaaS (Logistics DX) applications using Ruby on Rails",
+          "Frontend development using Vue.js to build user interfaces", 
           "Improved processing speed by 30% through backend API design and implementation",
           "Built responsive frontend using Vue.js",
           "Implemented real-time delivery tracking functionality"
         ]
       },
       {
-        name: "Educational Platform Renovation",
+        name: "Educational Platform Renovation | WYRD Inc.",
         period: "June 2023 - October 2023",
+        company: "WYRD Inc.",
+        position: "Full Stack Developer",
         technologies: ["React", "Ruby on Rails", "PostgreSQL"],
-        description: "Migrated existing CakePHP-based education site to modern technology stack. Achieved significant improvements in usability and performance.",
+        description: "Large-scale refactoring of education site from CakePHP to React & Rails. Migrated existing CakePHP-based education site to modern technology stack and achieved significant improvements in usability and performance.",
         achievements: [
+          "Large-scale refactoring of education site from CakePHP to React & Rails",
           "Complete frontend renewal improved UX",
           "Achieved loose coupling between frontend and backend through API design",
-          "Established stable API integration with core systems"
+          "Established stable API integration with core systems",
+          "API integration design and implementation with core systems"
         ]
       },
       {
-        name: "Portfolio Web Application",
-        period: "August 2022 - May 2023",
-        technologies: ["Ruby on Rails", "MySQL", "AWS S3", "Heroku"],
-        description: "Web application created as personal development. Developed using all technologies learned during RUNTEQ studies.",
+        name: "E-commerce Site Maintenance & Extension | WYRD Inc.",
+        period: "June 2023 - Present",
+        company: "WYRD Inc.",
+        position: "Full Stack Developer",
+        technologies: ["Shopify", "JavaScript", "HTML/CSS"],
+        description: "E-commerce site operation, maintenance, and extension app development. Responsible for ongoing maintenance and feature enhancement of Shopify-based e-commerce platform.",
         achievements: [
+          "E-commerce site operation, maintenance, and extension app development",
+          "Implemented new features and functionality improvements",
+          "Performance optimization and bug fixes",
+          "Custom app development for extended functionality"
+        ]
+      },
+      {
+        name: "Ruby on Rails Learning & Portfolio Development | RUNTEQ",
+        period: "August 2022 - May 2023",
+        company: "RUNTEQ",
+        position: "Programming Student",
+        technologies: ["Ruby on Rails", "MySQL", "AWS S3", "Heroku"],
+        description: "Comprehensive web application development learning using Ruby on Rails. Created portfolio web application using all technologies learned during the program.",
+        achievements: [
+          "Learning web application development using Ruby on Rails",
+          "Acquiring Git workflow skills in team development",
+          "Practicing infrastructure construction and deployment using AWS",
+          "Planning, developing, and operating portfolio applications",
           "Implemented user authentication and authorization",
           "Image upload functionality (AWS S3 integration)",
           "Responsive design implementation"

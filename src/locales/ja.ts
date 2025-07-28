@@ -34,67 +34,65 @@ export const jaData: ResumeData = {
       }
     ]
   },
-  experience: {
-    title: "職務経歴",
+  projects: {
+    title: "職務経歴・プロジェクト",
     list: [
       {
-        position: "フルスタックデベロッパー",
-        company: "株式会社WYRD",
+        name: "物流DX SaaS開発 | 株式会社WYRD",
         period: "2023年6月 - 現在",
-        location: "東京都",
-        responsibilities: [
+        company: "株式会社WYRD",
+        position: "フルスタックデベロッパー",
+        technologies: ["Ruby on Rails", "Vue.js", "MySQL", "AWS"],
+        description: "物流業界のデジタルトランスフォーメーションを支援するSaaSプラットフォームの開発。Ruby on Railsを使用したバックエンド開発と、Vue.jsを使用したフロントエンド開発でユーザーインターフェースを構築。",
+        achievements: [
           "SaaS（物流DX）アプリケーションのバックエンド開発（Ruby on Rails）",
           "フロントエンド開発（Vue.js）を担当し、ユーザーインターフェースを構築",
-          "教育サイトのCakePHPからReact・Railsへの大規模リファクタリング",
-          "基幹システムとのAPI連携設計・実装",
-          "ECサイトの運用・保守及び拡張アプリケーション開発"
-        ]
-      },
-      {
-        position: "プログラミング学習生",
-        company: "RUNTEQ",
-        period: "2022年8月 - 2023年5月",
-        location: "オンライン",
-        responsibilities: [
-          "Ruby on Railsを使用したWebアプリケーション開発の学習",
-          "チーム開発でのGitワークフローの習得",
-          "AWSを使用したインフラ構築・デプロイの実践",
-          "ポートフォリオアプリケーションの企画・開発・運用"
-        ]
-      }
-    ]
-  },
-  projects: {
-    title: "プロジェクト",
-    list: [
-      {
-        name: "物流DXプラットフォーム",
-        period: "2024年1月 - 現在",
-        technologies: ["Ruby on Rails", "Vue.js", "MySQL", "AWS"],
-        description: "物流業界向けのデジタルトランスフォーメーションを支援するSaaSプラットフォームの開発。配送管理、在庫管理、分析機能を提供。",
-        achievements: [
-          "バックエンドAPIの設計・実装により、処理速度を30%向上",
-          "Vue.jsによるレスポンシブなフロントエンド構築",
+          "バックエンドAPI設計・実装により処理速度を30%向上",
+          "Vue.jsを使用したレスポンシブフロントエンド構築",
           "リアルタイム配送追跡機能の実装"
         ]
       },
       {
-        name: "教育プラットフォーム改修",
+        name: "教育プラットフォーム刷新 | 株式会社WYRD",
         period: "2023年6月 - 2023年10月",
+        company: "株式会社WYRD",
+        position: "フルスタックデベロッパー",
         technologies: ["React", "Ruby on Rails", "PostgreSQL"],
-        description: "既存のCakePHPベースの教育サイトをモダンな技術スタックに移行。ユーザビリティとパフォーマンスの大幅改善を実現。",
+        description: "教育サイトのCakePHPからReact・Railsへの大規模リファクタリング。既存のCakePHPベースの教育サイトをモダンな技術スタックに移行し、ユーザビリティとパフォーマンスの大幅な改善を実現。",
         achievements: [
-          "フロントエンド完全リニューアルによりUX向上",
-          "API設計によりフロントエンド・バックエンドの疎結合化",
-          "基幹システムとの安定したAPI連携を実現"
+          "教育サイトのCakePHPからReact・Railsへの大規模リファクタリング",
+          "フロントエンドの完全刷新によりUXを向上",
+          "API設計によりフロントエンドとバックエンドの疎結合を実現",
+          "基幹システムとの安定したAPI連携を確立",
+          "基幹システムとのAPI連携設計・実装"
         ]
       },
       {
-        name: "ポートフォリオWebアプリ",
-        period: "2022年8月 - 2023年5月",
-        technologies: ["Ruby on Rails", "MySQL", "AWS S3", "Heroku"],
-        description: "個人開発として制作したWebアプリケーション。RUNTEQ在学中に学習した技術を総動員して開発。",
+        name: "ECサイト運用・保守・拡張 | 株式会社WYRD",
+        period: "2023年6月 - 現在",
+        company: "株式会社WYRD",
+        position: "フルスタックデベロッパー",
+        technologies: ["Shopify", "JavaScript", "HTML/CSS"],
+        description: "ECサイトの運用・保守及び拡張アプリケーション開発。Shopifyベースのeコマースプラットフォームの継続的なメンテナンスと機能拡張を担当。",
         achievements: [
+          "ECサイトの運用・保守及び拡張アプリケーション開発",
+          "新機能実装と機能改善",
+          "パフォーマンス最適化とバグ修正",
+          "拡張機能のためのカスタムアプリ開発"
+        ]
+      },
+      {
+        name: "Ruby on Rails学習・ポートフォリオ開発 | RUNTEQ",
+        period: "2022年8月 - 2023年5月",
+        company: "RUNTEQ",
+        position: "プログラミング学習生",
+        technologies: ["Ruby on Rails", "MySQL", "AWS S3", "Heroku"],
+        description: "Ruby on Railsを使用したWebアプリケーション開発の包括的な学習。プログラム期間中に学習した全ての技術を使用してポートフォリオWebアプリケーションを作成。",
+        achievements: [
+          "Ruby on Railsを使用したWebアプリケーション開発の学習",
+          "チーム開発でのGitワークフローの習得",
+          "AWSを使用したインフラ構築・デプロイの実践",
+          "ポートフォリオアプリケーションの企画・開発・運用",
           "ユーザー認証・認可機能の実装",
           "画像アップロード機能（AWS S3連携）",
           "レスポンシブデザインの実装"
