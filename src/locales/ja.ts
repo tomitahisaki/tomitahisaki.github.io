@@ -16,24 +16,21 @@ export const jaData: ResumeData = {
     title: "スキル",
     categories: [
       {
-        name: "プログラミング言語",
-        items: ["Ruby", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+        name: "実務で使用した主な技術",
+        items: [
+          "言語・フレームワーク：Ruby（Rails）、JavaScript（React.js, Vue.js）",
+          "データベース：MySQL",
+          "環境・ツール：Docker、GitHub、GitHub Actions、Slack、Figma",
+          "スタイル：GitHub Flow、アジャイル開発"
+        ]
       },
       {
-        name: "フレームワーク・ライブラリ",
-        items: ["Ruby on Rails", "React", "Vue.js", "Next.js", "Remix"]
-      },
-      {
-        name: "データベース",
-        items: ["MySQL", "PostgreSQL", "Redis"]
-      },
-      {
-        name: "インフラ・ツール",
-        items: ["AWS", "Docker", "Git", "GitHub", "Heroku"]
-      },
-      {
-        name: "その他",
-        items: ["Shopify", "Backlog", "Notion", "Slack", "Gather"]
+        name: "学習・個人開発で使用中の技術",
+        items: [
+          "Python, Golang, TypeScript",
+          "Raspberry Piを使ったIoT工作",
+          "技術ブログ執筆、資格取得のための学習（Web API設計、CS基礎など）"
+        ]
       }
     ]
   },

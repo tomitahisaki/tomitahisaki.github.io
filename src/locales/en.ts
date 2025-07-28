@@ -16,24 +16,21 @@ export const enData: ResumeData = {
     title: "Skills",
     categories: [
       {
-        name: "Programming Languages",
-        items: ["Ruby", "JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+        name: "Main Technologies Used in Professional Work",
+        items: [
+          "Languages & Frameworks: Ruby (Rails), JavaScript (React.js, Vue.js)",
+          "Databases: MySQL",
+          "Environment & Tools: Docker, GitHub, GitHub Actions, Slack, Figma",
+          "Development Style: GitHub Flow, PR-based development, Code Review, Weekly Scrum"
+        ]
       },
       {
-        name: "Frameworks & Libraries",
-        items: ["Ruby on Rails", "React", "Vue.js", "Next.js", "Remix"]
-      },
-      {
-        name: "Databases",
-        items: ["MySQL", "PostgreSQL", "Redis"]
-      },
-      {
-        name: "Infrastructure & Tools",
-        items: ["AWS", "Docker", "Git", "GitHub", "Heroku"]
-      },
-      {
-        name: "Others",
-        items: ["Shopify", "Backlog", "Notion", "Slack", "Gather"]
+        name: "Technologies Used in Learning & Personal Development",
+        items: [
+          "Python, Golang, TypeScript",
+          "IoT projects with Raspberry Pi",
+          "Technical blog writing, studying for certifications (Web API design, CS fundamentals, etc.)"
+        ]
       }
     ]
   },
