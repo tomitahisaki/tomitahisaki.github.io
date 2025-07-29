@@ -38,23 +38,24 @@ export const jaData: ResumeData = {
     title: "職務経歴・プロジェクト",
     categories: [
       {
-        name: "物流DX SaaS開発 | 株式会社WYRD (2023年6月 - 現在)",
+        name: "物流DX SaaS開発 | 株式会社WYRD (2024/01 - 現在)",
         items: [
           "SaaS（物流DX）アプリケーションのバックエンド(Rails),フロントエンド開発(Vue, React)",
           "一括登録・更新機能の新規開発・既存拡張,既存機能拡張,パフォーマンス改善",
+          "CSVインポート機能の新規開発・既存機能改善",
           "外部APIの新規開発・既存APIの改善",
           "法律改正に伴う新規開発",
         ]
       },
       {
-        name: "ECサイト運用・保守・拡張 | 株式会社WYRD (2023年10月 - 現在)",
+        name: "ECサイト運用・保守・拡張 | 株式会社WYRD (2023/10 - 現在)",
         items: [
           "ECサイト(Shopify)の運用・保守",
           "Slack連携, Remixカスタムアプリの開発(開発のみ)",
         ]
       },
       {
-        name: "教育プラットフォーム刷新 | 株式会社WYRD (2023年6月 - 2023年10月)",
+        name: "教育プラットフォーム刷新 | 株式会社WYRD (2023/06 - 2023/10)",
         items: [
           "教育サイトのCakePHPからReact・Railsへリプレイス",
           "メール・問い合わせの基幹システムとの連携APIの実装",
@@ -62,7 +63,7 @@ export const jaData: ResumeData = {
         ]
       },
       {
-        name: "Ruby on Rails学習・ポートフォリオ開発 | RUNTEQ (2022年8月 - 2023年5月)",
+        name: "Ruby on Rails学習・ポートフォリオ開発 | RUNTEQ (2022/08 - 2023/05)",
         items: [
           "Ruby on Railsを使用したアプリケーション開発",
           "ポートフォリオWebアプリ開発(使用技術：GoogleMaps API, Scraping, etc)",

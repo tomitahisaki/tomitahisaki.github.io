@@ -42,6 +42,7 @@ export const enData: ResumeData = {
         items: [
           "Backend (Rails) and frontend development (Vue, React) for SaaS (Logistics DX) applications",
           "New development and existing extensions for bulk registration/update features, existing feature enhancements, performance improvements",
+          "New development and improvements for CSV import functionality",
           "New development of external APIs and improvements to existing APIs",
           "New development related to legal revisions"
         ]
