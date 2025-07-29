@@ -40,42 +40,32 @@ export const enData: ResumeData = {
       {
         name: "Logistics DX SaaS Development | WYRD Inc. (June 2023 - Present)",
         items: [
-          "Backend development for SaaS (Logistics DX) applications using Ruby on Rails",
-          "Frontend development using Vue.js to build user interfaces",
-          "Improved processing speed by 30% through backend API design and implementation",
-          "Built responsive frontend using Vue.js",
-          "Implemented real-time delivery tracking functionality"
+          "Backend (Rails) and frontend development (Vue, React) for SaaS (Logistics DX) applications",
+          "New development and existing extensions for bulk registration/update features, existing feature enhancements, performance improvements",
+          "New development of external APIs and improvements to existing APIs",
+          "New development related to legal revisions"
+        ]
+      },
+      {
+        name: "E-commerce Site Maintenance & Extension | WYRD Inc. (October 2023 - Present)",
+        items: [
+          "E-commerce site (Shopify) operation and maintenance",
+          "Slack integration, Remix custom app development (development only)"
         ]
       },
       {
         name: "Educational Platform Renovation | WYRD Inc. (June 2023 - October 2023)",
         items: [
-          "Large-scale refactoring of education site from CakePHP to React & Rails",
-          "Complete frontend renewal improved UX",
-          "Achieved loose coupling between frontend and backend through API design",
-          "Established stable API integration with core systems",
-          "API integration design and implementation with core systems"
-        ]
-      },
-      {
-        name: "E-commerce Site Maintenance & Extension | WYRD Inc. (June 2023 - Present)",
-        items: [
-          "E-commerce site operation, maintenance, and extension app development",
-          "Implemented new features and functionality improvements",
-          "Performance optimization and bug fixes",
-          "Custom app development for extended functionality"
+          "Replaced education site from CakePHP to React & Rails",
+          "Implementation of email and inquiry integration API with core systems",
+          "CMS design and implementation"
         ]
       },
       {
         name: "Ruby on Rails Learning & Portfolio Development | RUNTEQ (August 2022 - May 2023)",
         items: [
-          "Learning web application development using Ruby on Rails",
-          "Acquiring Git workflow skills in team development",
-          "Practicing infrastructure construction and deployment using AWS",
-          "Planning, developing, and operating portfolio applications",
-          "Implemented user authentication and authorization",
-          "Image upload functionality (AWS S3 integration)",
-          "Responsive design implementation"
+          "Web application development using Ruby on Rails",
+          "Portfolio web app development (Technologies used: Google Maps API, Scraping, etc.)"
         ]
       }
     ]
@@ -92,9 +82,10 @@ export const enData: ResumeData = {
       {
         name: "Certifications",
         items: [
-          "Ruby Certified Programmer Gold - Ruby Association (2023)",
-          "Fundamental Information Technology Engineer (FE) - IPA Information-technology Promotion Agency (2022)",
-          "Applied Information Technology Engineer (AP) - IPA Information-technology Promotion Agency (2023)"
+          "Ruby Certified Programmer Gold - Ruby Association (September 2023)",
+          "Fundamental Information Technology Engineer (FE) - IPA Information-technology Promotion Agency (January 2024)",
+          "Applied Information Technology Engineer (AP) - IPA Information-technology Promotion Agency (July 2024)",
+          "TOEIC Listening & Reading 760 points (July 2024)"
         ]
       }
     ]
@@ -117,11 +108,11 @@ export const enData: ResumeData = {
         ]
       },
       {
-        name: "Community",
+        name: "Community Activities (kashiwarb)",
         url: "https://kashiwarb.connpass.com/",
         items: [
           {
-            title: "Organized one study group session",
+            title: "Monthly study group sessions (retrospective article)",
             url: "https://hisakit.hatenablog.com/entry/2025/07/26/142523"
           }
         ]
