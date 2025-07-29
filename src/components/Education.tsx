@@ -16,12 +16,12 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
           <div style={styles.degreesList}>
             {data.degrees.map((degree, index) => (
               <div key={index} style={styles.degreeItem}>
-                <div style={styles.degreeHeader}>
-                  <div style={styles.degreeInfo}>
-                    <h4 style={styles.degreeTitle}>{degree.degree}</h4>
+                <div style={styles.itemHeader}>
+                  <div style={styles.itemTitle}>
+                    <h4 style={styles.itemName}>{degree.degree}</h4>
                     <h5 style={styles.institution}>{degree.institution}</h5>
                   </div>
-                  <div style={styles.degreeMeta}>
+                  <div style={styles.itemMeta}>
                     <span style={styles.period}>{degree.period}</span>
                     <span style={styles.location}>{degree.location}</span>
                   </div>
@@ -38,9 +38,9 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
           <div style={styles.certificationsList}>
             {data.certifications.map((cert, index) => (
               <div key={index} style={styles.certificationItem}>
-                <div style={styles.certificationHeader}>
-                  <div style={styles.certificationInfo}>
-                    <h4 style={styles.certificationName}>{cert.name}</h4>
+                <div style={styles.itemHeader}>
+                  <div style={styles.itemTitle}>
+                    <h4 style={styles.itemName}>{cert.name}</h4>
                     <span style={styles.issuer}>{cert.issuer}</span>
                   </div>
                   <span style={styles.certificationDate}>{cert.date}</span>
@@ -56,107 +56,85 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
 
 const styles = {
   section: {
-    marginBottom: '2.5em',
-    padding: '0 2em',
+    marginBottom: '2em',
+    padding: '1em',
+    borderBottom: '0.2em solid #e0e0e0',
   },
   sectionTitle: {
-    fontSize: '1.8em',
+    fontSize: '1.5em',
     fontWeight: 'bold',
     marginBottom: '1em',
     color: '#333',
-    borderBottom: '0.15em solid #0066cc',
-    paddingBottom: '0.5em',
+    margin: '0 0 1em 0',
   },
   subsection: {
-    marginBottom: '2em',
-    marginLeft: '0.5em',
+    marginBottom: '1.5em',
   },
   subsectionTitle: {
-    fontSize: '1.3em',
-    fontWeight: 'bold',
-    marginBottom: '1em',
+    fontSize: '1em',
+    fontWeight: 'normal',
+    marginBottom: '0.5em',
     color: '#444',
   },
   degreesList: {
-    display: 'flex',
-    flexDirection: 'column' as const,
-    gap: '1em',
+    marginTop: '0.5em',
   },
   degreeItem: {
+    marginBottom: '1.5em',
     paddingBottom: '1em',
-    borderBottom: '0.05em solid #e0e0e0',
   },
-  degreeHeader: {
+  certificationsList: {
+    marginTop: '0.5em',
+  },
+  certificationItem: {
+    marginBottom: '1.5em',
+    paddingBottom: '1em',
+  },
+  itemHeader: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
+    marginBottom: '0.5em',
     flexWrap: 'wrap' as const,
     gap: '0.5em',
   },
-  degreeInfo: {
+  itemTitle: {
     flex: '1',
   },
-  degreeTitle: {
-    fontSize: '1.1em',
-    fontWeight: 'bold',
+  itemName: {
+    fontSize: '1em',
+    fontWeight: 'normal',
     margin: '0 0 0.3em 0',
     color: '#333',
   },
   institution: {
     fontSize: '1em',
-    fontWeight: '600',
+    fontWeight: 'normal',
     margin: '0',
     color: '#0066cc',
   },
-  degreeMeta: {
+  issuer: {
+    fontSize: '1em',
+    color: '#666',
+  },
+  itemMeta: {
     display: 'flex',
     flexDirection: 'column' as const,
     alignItems: 'flex-end',
     gap: '0.2em',
   },
   period: {
-    fontSize: '0.9em',
-    fontWeight: 'bold',
+    fontSize: '1em',
+    fontWeight: 'normal',
     color: '#666',
   },
   location: {
-    fontSize: '0.8em',
+    fontSize: '1em',
     color: '#888',
   },
-  certificationsList: {
-    display: 'flex',
-    flexDirection: 'column' as const,
-    gap: '0.8em',
-  },
-  certificationItem: {
-    padding: '0.8em',
-    backgroundColor: '#f8f9fa',
-    borderRadius: '0.3em',
-    border: '0.05em solid #e0e0e0',
-  },
-  certificationHeader: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    flexWrap: 'wrap' as const,
-    gap: '0.5em',
-  },
-  certificationInfo: {
-    flex: '1',
-  },
-  certificationName: {
-    fontSize: '1.1em',
-    fontWeight: 'bold',
-    margin: '0 0 0.2em 0',
-    color: '#333',
-  },
-  issuer: {
-    fontSize: '0.9em',
-    color: '#666',
-  },
   certificationDate: {
-    fontSize: '0.9em',
-    fontWeight: 'bold',
-    color: '#0066cc',
+    fontSize: '1em',
+    fontWeight: 'normal',
+    color: '#666',
   },
 };
