@@ -103,25 +103,40 @@ export const enData: ResumeData = {
     title: "Technical Activities & Personal Projects",
     categories: [
       {
-        name: "Blog Introduction",
+        name: "Hisakey's Blog",
+        url: "https://hisakit.hatenablog.com/",
         items: [
-          "Technical Blog \"Full-Stack Developer's Notes\" - Regularly publishing articles on Ruby on Rails, Vue.js, React.js with 10K monthly page views",
-          "Qiita Technical Article Publications - Published 30+ articles on Ruby on Rails and JavaScript, earning 500+ total likes"
+          {
+            title: "First Steps with AST - Learning syntax trees through parser and Rubocop",
+            url: "https://hisakit.hatenablog.com/entry/2025/07/07/182625"
+          },
+          {
+            title: "How wrap_parameters Rails feature worked differently from frontend interface without knowing it",
+            url: "https://hisakit.hatenablog.com/entry/2025/06/08/150641"
+          }
         ]
       },
       {
-        name: "Community Management",
+        name: "Community",
+        url: "https://kashiwarb.connpass.com/",
         items: [
-          "Local Programming Community \"Tech Meetup Nagoya\" Management - Monthly events with 50+ regular participants",
-          "Internal Technical Study Group Planning & Management - Bi-monthly sessions improving overall team skills"
+          {
+            title: "Organized one study group session",
+            url: "https://hisakit.hatenablog.com/entry/2025/07/26/142523"
+          }
         ]
       },
       {
         name: "Personal Development",
         items: [
-          "IoT Weather Observation System - Real-time weather data collection and visualization using Raspberry Pi (Python, Flask, SQLite)",
-          "Expense Tracker App \"MoneyTracker\" - React Native app with receipt photography and automatic input features",
-          "Task Management Tool \"TaskFlow\" - Vue.js + Rails API with drag & drop operations and team collaboration features"
+          {
+            title: "IoT Temperature & Humidity Management System (In Development) - Temperature and humidity management using Raspberry Pi (Python, Golang, React)",
+            url: "https://github.com/tomitahisaki/device-platform"
+          },
+          {
+            title: "Slack Blog Reminder Bot - Bot for reminding blog updates in Slack",
+            url: "https://github.com/tomitahisaki/blog_slack_reminder_template"
+          }
         ]
       }
     ]
