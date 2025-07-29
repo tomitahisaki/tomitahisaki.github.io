@@ -1,3 +1,14 @@
+export interface PublicationItem {
+  title: string;
+  url?: string;
+}
+
+export interface PublicationCategory {
+  name: string;
+  url?: string;
+  items: PublicationItem[];
+}
+
 export interface ResumeData {
   header: {
     name: string;
@@ -33,9 +44,6 @@ export interface ResumeData {
   };
   publications: {
     title: string;
-    categories: Array<{
-      name: string;
-      items: string[];
-    }>;
+    categories: PublicationCategory[];
   };
 }

@@ -86,15 +86,16 @@ export const jaData: ResumeData = {
       {
         name: "学歴",
         items: [
-          "理工学部 情報工学科、名城大学 (2010年4月 - 2014年3月、愛知県)"
+          "名城大学 理工学部 環境創造学科 （2011/04 - 2015/03）",
         ]
       },
       {
         name: "資格・認定",
         items: [
-          "Ruby技術者認定試験 Gold - Ruby Association (2023年)",
-          "基本情報技術者試験 (FE) - IPA 情報処理推進機構 (2022年)",
-          "応用情報技術者試験 (AP) - IPA 情報処理推進機構 (2023年)"
+          "Ruby技術者認定試験 Gold - Ruby Association (2023/09)",
+          "基本情報技術者試験 (FE) - IPA 情報処理推進機構 (2024/01)",
+          "応用情報技術者試験 (AP) - IPA 情報処理推進機構 (2024/07)",
+          "TOIEC Listening & Reading 760点 (2024/07)",
         ]
       }
     ]
@@ -103,25 +104,40 @@ export const jaData: ResumeData = {
     title: "技術活動・個人開発",
     categories: [
       {
-        name: "ブログ紹介",
+        name: "Hisakeyのブログ",
+        url: "https://hisakit.hatenablog.com/",
         items: [
-          "技術ブログ「フルスタック開発者の備忘録」- Ruby on Rails、Vue.js、React.jsを中心とした技術記事を定期投稿、月間1万PV達成",
-          "Qiita技術記事投稿 - Ruby on Rails、JavaScript関連の記事を30本以上投稿、総いいね数500以上獲得"
+          {
+            title: "「はじめてのAST」〜parserとRubocopで構文木を学ぶ〜",
+            url: "https://hisakit.hatenablog.com/entry/2025/07/07/182625"
+          },
+          {
+            title: "wrap_parameters というRails機能を知らずに、フロントエンドと異なるインターフェイスでも動いてしまった話",
+            url: "https://hisakit.hatenablog.com/entry/2025/06/08/150641"
+          }
         ]
       },
       {
-        name: "コミュニティ運営",
+        name: "コミュニティ活動(kashiwarb)",
+        url: "https://kashiwarb.connpass.com/",
         items: [
-          "地域プログラミングコミュニティ「Tech Meetup Nagoya」運営 - 50名規模のイベントを月1回定期開催",
-          "社内技術勉強会の企画・運営 - 月2回の勉強会でチーム全体のスキル向上に寄与"
+          {
+            title: "月1回の勉強会の開催(振り返り記事)",
+            url: "https://hisakit.hatenablog.com/entry/2025/07/26/142523"
+          }
         ]
       },
       {
         name: "個人開発",
         items: [
-          "IoT気象観測システム - Raspberry Piとセンサーを使った気象データ収集・リアルタイム可視化システム（Python、Flask、SQLite）",
-          "家計簿管理アプリ「MoneyTracker」- React Native製、レシート撮影による自動入力機能付き",
-          "タスク管理ツール「TaskFlow」- Vue.js + Rails APIで構築、ドラッグ&ドロップ操作とチーム協働機能を実装"
+          {
+            title: "IoT温湿度管理システム(開発中) - Raspberry Piとセンサーを使った温湿度管理システム（Python, Golang, React）",
+            url: "https://github.com/tomitahisaki/device-platform"
+          },
+          {
+            title: "Slack blog Reminder Bot - Slackでのブログ更新をリマインドするボット",
+            url: "https://github.com/tomitahisaki/blog_slack_reminder_template"
+          }
         ]
       }
     ]
