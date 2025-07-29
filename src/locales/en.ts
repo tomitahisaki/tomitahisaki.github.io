@@ -42,7 +42,6 @@ export const enData: ResumeData = {
         period: "June 2023 - Present",
         company: "WYRD Inc.",
         position: "Full Stack Developer",
-        technologies: ["Ruby on Rails", "Vue.js", "MySQL", "AWS"],
         description: "Development of a SaaS platform supporting digital transformation in the logistics industry. Responsible for backend development using Ruby on Rails and frontend development using Vue.js to build user interfaces.",
         achievements: [
           "Backend development for SaaS (Logistics DX) applications using Ruby on Rails",
@@ -57,7 +56,6 @@ export const enData: ResumeData = {
         period: "June 2023 - October 2023",
         company: "WYRD Inc.",
         position: "Full Stack Developer",
-        technologies: ["React", "Ruby on Rails", "PostgreSQL"],
         description: "Large-scale refactoring of education site from CakePHP to React & Rails. Migrated existing CakePHP-based education site to modern technology stack and achieved significant improvements in usability and performance.",
         achievements: [
           "Large-scale refactoring of education site from CakePHP to React & Rails",
@@ -72,7 +70,6 @@ export const enData: ResumeData = {
         period: "June 2023 - Present",
         company: "WYRD Inc.",
         position: "Full Stack Developer",
-        technologies: ["Shopify", "JavaScript", "HTML/CSS"],
         description: "E-commerce site operation, maintenance, and extension app development. Responsible for ongoing maintenance and feature enhancement of Shopify-based e-commerce platform.",
         achievements: [
           "E-commerce site operation, maintenance, and extension app development",
@@ -86,7 +83,6 @@ export const enData: ResumeData = {
         period: "August 2022 - May 2023",
         company: "RUNTEQ",
         position: "Programming Student",
-        technologies: ["Ruby on Rails", "MySQL", "AWS S3", "Heroku"],
         description: "Comprehensive web application development learning using Ruby on Rails. Created portfolio web application using all technologies learned during the program.",
         achievements: [
           "Learning web application development using Ruby on Rails",

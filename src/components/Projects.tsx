@@ -15,13 +15,6 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
             <div style={styles.projectHeader}>
               <div style={styles.projectTitle}>
                 <h3 style={styles.projectName}>{project.name}</h3>
-                <div style={styles.technologies}>
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} style={styles.techTag}>
-                      {tech}
-                    </span>
-                  ))}
-                </div>
               </div>
               <div style={styles.projectMeta}>
                 <span style={styles.period}>{project.period}</span>
@@ -96,21 +89,6 @@ const styles = {
     fontSize: '1em',
     fontWeight: 'bold',
     color: '#666',
-  },
-  technologies: {
-    display: 'flex',
-    flexWrap: 'wrap' as const,
-    gap: '0.4em',
-    marginBottom: '0.5em',
-  },
-  techTag: {
-    backgroundColor: '#f0f8ff',
-    color: '#0066cc',
-    padding: '0.2em 0.5em',
-    borderRadius: '0.8em',
-    fontSize: '0.8em',
-    fontWeight: '500',
-    border: '0.05em solid #0066cc',
   },
   projectDescription: {
     fontSize: '1em',

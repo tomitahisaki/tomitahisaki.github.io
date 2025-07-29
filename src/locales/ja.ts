@@ -42,7 +42,6 @@ export const jaData: ResumeData = {
         period: "2023年6月 - 現在",
         company: "株式会社WYRD",
         position: "フルスタックデベロッパー",
-        technologies: ["Ruby on Rails", "Vue.js", "MySQL", "AWS"],
         description: "物流業界のデジタルトランスフォーメーションを支援するSaaSプラットフォームの開発。Ruby on Railsを使用したバックエンド開発と、Vue.jsを使用したフロントエンド開発でユーザーインターフェースを構築。",
         achievements: [
           "SaaS（物流DX）アプリケーションのバックエンド開発（Ruby on Rails）",
@@ -57,7 +56,6 @@ export const jaData: ResumeData = {
         period: "2023年6月 - 2023年10月",
         company: "株式会社WYRD",
         position: "フルスタックデベロッパー",
-        technologies: ["React", "Ruby on Rails", "PostgreSQL"],
         description: "教育サイトのCakePHPからReact・Railsへの大規模リファクタリング。既存のCakePHPベースの教育サイトをモダンな技術スタックに移行し、ユーザビリティとパフォーマンスの大幅な改善を実現。",
         achievements: [
           "教育サイトのCakePHPからReact・Railsへの大規模リファクタリング",
@@ -72,7 +70,6 @@ export const jaData: ResumeData = {
         period: "2023年6月 - 現在",
         company: "株式会社WYRD",
         position: "フルスタックデベロッパー",
-        technologies: ["Shopify", "JavaScript", "HTML/CSS"],
         description: "ECサイトの運用・保守及び拡張アプリケーション開発。Shopifyベースのeコマースプラットフォームの継続的なメンテナンスと機能拡張を担当。",
         achievements: [
           "ECサイトの運用・保守及び拡張アプリケーション開発",
@@ -86,7 +83,6 @@ export const jaData: ResumeData = {
         period: "2022年8月 - 2023年5月",
         company: "RUNTEQ",
         position: "プログラミング学習生",
-        technologies: ["Ruby on Rails", "MySQL", "AWS S3", "Heroku"],
         description: "Ruby on Railsを使用したWebアプリケーション開発の包括的な学習。プログラム期間中に学習した全ての技術を使用してポートフォリオWebアプリケーションを作成。",
         achievements: [
           "Ruby on Railsを使用したWebアプリケーション開発の学習",

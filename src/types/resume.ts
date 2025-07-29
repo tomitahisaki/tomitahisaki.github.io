@@ -24,7 +24,6 @@ export interface ResumeData {
       period: string;
       company?: string;
       position?: string;
-      technologies: string[];
       description: string;
       achievements: string[];
     }>;
