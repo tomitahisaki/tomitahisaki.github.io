@@ -36,28 +36,20 @@ export const enData: ResumeData = {
   },
   projects: {
     title: "Work Experience & Projects",
-    list: [
+    categories: [
       {
-        name: "Logistics DX SaaS Development | WYRD Inc.",
-        period: "June 2023 - Present",
-        company: "WYRD Inc.",
-        position: "Full Stack Developer",
-        description: "Development of a SaaS platform supporting digital transformation in the logistics industry. Responsible for backend development using Ruby on Rails and frontend development using Vue.js to build user interfaces.",
-        achievements: [
+        name: "Logistics DX SaaS Development | WYRD Inc. (June 2023 - Present)",
+        items: [
           "Backend development for SaaS (Logistics DX) applications using Ruby on Rails",
-          "Frontend development using Vue.js to build user interfaces", 
+          "Frontend development using Vue.js to build user interfaces",
           "Improved processing speed by 30% through backend API design and implementation",
           "Built responsive frontend using Vue.js",
           "Implemented real-time delivery tracking functionality"
         ]
       },
       {
-        name: "Educational Platform Renovation | WYRD Inc.",
-        period: "June 2023 - October 2023",
-        company: "WYRD Inc.",
-        position: "Full Stack Developer",
-        description: "Large-scale refactoring of education site from CakePHP to React & Rails. Migrated existing CakePHP-based education site to modern technology stack and achieved significant improvements in usability and performance.",
-        achievements: [
+        name: "Educational Platform Renovation | WYRD Inc. (June 2023 - October 2023)",
+        items: [
           "Large-scale refactoring of education site from CakePHP to React & Rails",
           "Complete frontend renewal improved UX",
           "Achieved loose coupling between frontend and backend through API design",
@@ -66,12 +58,8 @@ export const enData: ResumeData = {
         ]
       },
       {
-        name: "E-commerce Site Maintenance & Extension | WYRD Inc.",
-        period: "June 2023 - Present",
-        company: "WYRD Inc.",
-        position: "Full Stack Developer",
-        description: "E-commerce site operation, maintenance, and extension app development. Responsible for ongoing maintenance and feature enhancement of Shopify-based e-commerce platform.",
-        achievements: [
+        name: "E-commerce Site Maintenance & Extension | WYRD Inc. (June 2023 - Present)",
+        items: [
           "E-commerce site operation, maintenance, and extension app development",
           "Implemented new features and functionality improvements",
           "Performance optimization and bug fixes",
@@ -79,12 +67,8 @@ export const enData: ResumeData = {
         ]
       },
       {
-        name: "Ruby on Rails Learning & Portfolio Development | RUNTEQ",
-        period: "August 2022 - May 2023",
-        company: "RUNTEQ",
-        position: "Programming Student",
-        description: "Comprehensive web application development learning using Ruby on Rails. Created portfolio web application using all technologies learned during the program.",
-        achievements: [
+        name: "Ruby on Rails Learning & Portfolio Development | RUNTEQ (August 2022 - May 2023)",
+        items: [
           "Learning web application development using Ruby on Rails",
           "Acquiring Git workflow skills in team development",
           "Practicing infrastructure construction and deployment using AWS",

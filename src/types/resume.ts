@@ -19,13 +19,9 @@ export interface ResumeData {
   };
   projects: {
     title: string;
-    list: Array<{
+    categories: Array<{
       name: string;
-      period: string;
-      company?: string;
-      position?: string;
-      description: string;
-      achievements: string[];
+      items: string[];
     }>;
   };
   education: {

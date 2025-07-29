@@ -36,14 +36,10 @@ export const jaData: ResumeData = {
   },
   projects: {
     title: "職務経歴・プロジェクト",
-    list: [
+    categories: [
       {
-        name: "物流DX SaaS開発 | 株式会社WYRD",
-        period: "2023年6月 - 現在",
-        company: "株式会社WYRD",
-        position: "フルスタックデベロッパー",
-        description: "物流業界のデジタルトランスフォーメーションを支援するSaaSプラットフォームの開発。Ruby on Railsを使用したバックエンド開発と、Vue.jsを使用したフロントエンド開発でユーザーインターフェースを構築。",
-        achievements: [
+        name: "物流DX SaaS開発 | 株式会社WYRD (2023年6月 - 現在)",
+        items: [
           "SaaS（物流DX）アプリケーションのバックエンド開発（Ruby on Rails）",
           "フロントエンド開発（Vue.js）を担当し、ユーザーインターフェースを構築",
           "バックエンドAPI設計・実装により処理速度を30%向上",
@@ -52,12 +48,8 @@ export const jaData: ResumeData = {
         ]
       },
       {
-        name: "教育プラットフォーム刷新 | 株式会社WYRD",
-        period: "2023年6月 - 2023年10月",
-        company: "株式会社WYRD",
-        position: "フルスタックデベロッパー",
-        description: "教育サイトのCakePHPからReact・Railsへの大規模リファクタリング。既存のCakePHPベースの教育サイトをモダンな技術スタックに移行し、ユーザビリティとパフォーマンスの大幅な改善を実現。",
-        achievements: [
+        name: "教育プラットフォーム刷新 | 株式会社WYRD (2023年6月 - 2023年10月)",
+        items: [
           "教育サイトのCakePHPからReact・Railsへの大規模リファクタリング",
           "フロントエンドの完全刷新によりUXを向上",
           "API設計によりフロントエンドとバックエンドの疎結合を実現",
@@ -66,12 +58,8 @@ export const jaData: ResumeData = {
         ]
       },
       {
-        name: "ECサイト運用・保守・拡張 | 株式会社WYRD",
-        period: "2023年6月 - 現在",
-        company: "株式会社WYRD",
-        position: "フルスタックデベロッパー",
-        description: "ECサイトの運用・保守及び拡張アプリケーション開発。Shopifyベースのeコマースプラットフォームの継続的なメンテナンスと機能拡張を担当。",
-        achievements: [
+        name: "ECサイト運用・保守・拡張 | 株式会社WYRD (2023年6月 - 現在)",
+        items: [
           "ECサイトの運用・保守及び拡張アプリケーション開発",
           "新機能実装と機能改善",
           "パフォーマンス最適化とバグ修正",
@@ -79,12 +67,8 @@ export const jaData: ResumeData = {
         ]
       },
       {
-        name: "Ruby on Rails学習・ポートフォリオ開発 | RUNTEQ",
-        period: "2022年8月 - 2023年5月",
-        company: "RUNTEQ",
-        position: "プログラミング学習生",
-        description: "Ruby on Railsを使用したWebアプリケーション開発の包括的な学習。プログラム期間中に学習した全ての技術を使用してポートフォリオWebアプリケーションを作成。",
-        achievements: [
+        name: "Ruby on Rails学習・ポートフォリオ開発 | RUNTEQ (2022年8月 - 2023年5月)",
+        items: [
           "Ruby on Railsを使用したWebアプリケーション開発の学習",
           "チーム開発でのGitワークフローの習得",
           "AWSを使用したインフラ構築・デプロイの実践",
