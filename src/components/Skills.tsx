@@ -30,29 +30,23 @@ export const Skills: React.FC<SkillsProps> = ({ data }) => {
 
 const styles = {
   section: {
-    marginBottom: '2em',
-    padding: '1em',
-    borderBottom: '0.2em solid #e0e0e0',
+    marginTop: '1em',
   },
   sectionTitle: {
     fontSize: '1.5em',
     fontWeight: 'bold',
-    marginBottom: '1em',
     color: '#333',
-    margin: '0 0 1em 0',
   },
   content: {
-    marginTop: '1em',
+    margin: '0.5em',
   },
   skillCategory: {
-    marginBottom: '1.5em',
   },
   categoryTitle: {
     fontSize: '1.1em',
     fontWeight: 'bold',
     marginBottom: '0.8em',
     color: '#333',
-    margin: '0 0 0.8em 0',
   },
   skillsList: {
     listStyle: 'none',

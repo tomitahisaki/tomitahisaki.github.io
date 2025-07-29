@@ -29,15 +29,12 @@ export const Summary: React.FC<SummaryProps> = ({ data }) => {
 
 const styles = {
   section: {
-    marginBottom: '2em',
-    padding: '1em',
+    marginTop: '1em',
   },
   sectionTitle: {
     fontSize: '1.5em',
     fontWeight: 'bold',
-    marginBottom: '0.2em solid',
     color: '#333',
-    margin: '0 0 1em 0',
   },
   content: {
     marginTop: '1em',
@@ -46,6 +43,6 @@ const styles = {
     fontSize: '1em',
     lineHeight: '1.6',
     color: '#666',
-    margin: '0',
+    margin: '0.5em',
   },
 };

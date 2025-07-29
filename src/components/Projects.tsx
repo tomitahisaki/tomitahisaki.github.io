@@ -20,11 +20,11 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
                 <span style={styles.period}>{project.period}</span>
               </div>
             </div>
-            
+
             <p style={styles.projectDescription}>
               {project.description}
             </p>
-            
+
             {project.achievements.length > 0 && (
               <ul style={styles.achievements}>
                 {project.achievements.map((achievement, achIndex) => (
@@ -43,30 +43,22 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
 
 const styles = {
   section: {
-    marginBottom: '2em',
-    padding: '1em',
-    borderBottom: '0.2em solid #e0e0e0',
   },
   sectionTitle: {
     fontSize: '1.5em',
     fontWeight: 'bold',
-    marginBottom: '1em',
     color: '#333',
-    margin: '0 0 1em 0',
   },
   projectsList: {
-    marginTop: '1em',
+    margin: '0.5em',
   },
   projectItem: {
-    marginBottom: '2em',
-    paddingBottom: '1.5em',
-    borderBottom: '0.05em solid #e0e0e0',
+    marginTop: '1em'
   },
   projectHeader: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-    marginBottom: '1em',
     flexWrap: 'wrap' as const,
     gap: '0.5em',
   },
@@ -74,7 +66,7 @@ const styles = {
     flex: '1',
   },
   projectName: {
-    fontSize: '1.3em',
+    fontSize: '1.1em',
     fontWeight: 'bold',
     margin: '0 0 0.5em 0',
     color: '#333',

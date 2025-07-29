@@ -9,7 +9,7 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
   return (
     <section style={styles.section}>
       <h2 style={styles.sectionTitle}>{data.title}</h2>
-      
+
       {data.degrees.length > 0 && (
         <div style={styles.subsection}>
           <h3 style={styles.subsectionTitle}>学歴</h3>
@@ -41,7 +41,6 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
                 <div style={styles.itemHeader}>
                   <div style={styles.itemTitle}>
                     <h4 style={styles.itemName}>{cert.name}</h4>
-                    <span style={styles.issuer}>{cert.issuer}</span>
                   </div>
                   <span style={styles.certificationDate}>{cert.date}</span>
                 </div>
@@ -56,39 +55,30 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
 
 const styles = {
   section: {
-    marginBottom: '2em',
-    padding: '1em',
-    borderBottom: '0.2em solid #e0e0e0',
   },
   sectionTitle: {
     fontSize: '1.5em',
     fontWeight: 'bold',
-    marginBottom: '1em',
     color: '#333',
-    margin: '0 0 1em 0',
   },
   subsection: {
-    marginBottom: '1.5em',
+    margin: '0.5em',
   },
   subsectionTitle: {
-    fontSize: '1em',
-    fontWeight: 'normal',
+    fontSize: '1.1em',
+    fontWeight: 'bold',
     marginBottom: '0.5em',
     color: '#444',
   },
   degreesList: {
-    marginTop: '0.5em',
+    margin: '0.5em',
   },
   degreeItem: {
-    marginBottom: '1.5em',
-    paddingBottom: '1em',
   },
   certificationsList: {
-    marginTop: '0.5em',
+    margin: '0.5em',
   },
   certificationItem: {
-    marginBottom: '1.5em',
-    paddingBottom: '1em',
   },
   itemHeader: {
     display: 'flex',
