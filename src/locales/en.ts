@@ -125,27 +125,29 @@ export const enData: ResumeData = {
     ]
   },
   publications: {
-    title: "Publications & Presentations",
-    list: [
+    title: "Technical Activities & Personal Projects",
+    categories: [
       {
-        title: "Best Practices for API Design in Ruby on Rails",
-        type: "Technical Blog",
-        date: "March 2024",
-        url: "https://example.com/article1",
-        description: "Explaining practical API design from RESTful API design principles to implementation methods in Rails API mode and versioning strategies."
+        name: "Blog Introduction",
+        items: [
+          "Technical Blog \"Full-Stack Developer's Notes\" - Regularly publishing articles on Ruby on Rails, Vue.js, React.js with 10K monthly page views",
+          "Qiita Technical Article Publications - Published 30+ articles on Ruby on Rails and JavaScript, earning 500+ total likes"
+        ]
       },
       {
-        title: "State Management with Vue.js 3 Composition API",
-        type: "Technical Article",
-        date: "January 2024",
-        url: "https://example.com/article2",
-        description: "Introducing efficient state management techniques using Vue.js 3 Composition API based on experience from actual projects."
+        name: "Community Management",
+        items: [
+          "Local Programming Community \"Tech Meetup Nagoya\" Management - Monthly events with 50+ regular participants",
+          "Internal Technical Study Group Planning & Management - Bi-monthly sessions improving overall team skills"
+        ]
       },
       {
-        title: "Performance Optimization in Modern Frontend Development",
-        type: "Internal Study Session",
-        date: "December 2023",
-        description: "Presented on performance improvement techniques for React and Vue.js applications, covering from bundle size optimization to rendering optimization."
+        name: "Personal Development",
+        items: [
+          "IoT Weather Observation System - Real-time weather data collection and visualization using Raspberry Pi (Python, Flask, SQLite)",
+          "Expense Tracker App \"MoneyTracker\" - React Native app with receipt photography and automatic input features",
+          "Task Management Tool \"TaskFlow\" - Vue.js + Rails API with drag & drop operations and team collaboration features"
+        ]
       }
     ]
   }

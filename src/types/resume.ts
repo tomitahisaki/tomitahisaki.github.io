@@ -44,12 +44,9 @@ export interface ResumeData {
   };
   publications: {
     title: string;
-    list: Array<{
-      title: string;
-      type: string;
-      date: string;
-      url?: string;
-      description: string;
+    categories: Array<{
+      name: string;
+      items: string[];
     }>;
   };
 }

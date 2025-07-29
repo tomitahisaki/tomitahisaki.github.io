@@ -125,27 +125,29 @@ export const jaData: ResumeData = {
     ]
   },
   publications: {
-    title: "技術記事・発表",
-    list: [
+    title: "技術活動・個人開発",
+    categories: [
       {
-        title: "Ruby on RailsでのAPI設計ベストプラクティス",
-        type: "技術ブログ",
-        date: "2024年3月",
-        url: "https://example.com/article1",
-        description: "RESTful APIの設計原則から、Rails APIモードでの実装方法、バージョニング戦略まで、実践的なAPI設計について解説。"
+        name: "ブログ紹介",
+        items: [
+          "技術ブログ「フルスタック開発者の備忘録」- Ruby on Rails、Vue.js、React.jsを中心とした技術記事を定期投稿、月間1万PV達成",
+          "Qiita技術記事投稿 - Ruby on Rails、JavaScript関連の記事を30本以上投稿、総いいね数500以上獲得"
+        ]
       },
       {
-        title: "Vue.js 3 Composition APIを使った状態管理",
-        type: "技術記事",
-        date: "2024年1月",
-        url: "https://example.com/article2",
-        description: "Vue.js 3のComposition APIを活用した効率的な状態管理手法について、実際のプロジェクトでの経験を元に紹介。"
+        name: "コミュニティ運営",
+        items: [
+          "地域プログラミングコミュニティ「Tech Meetup Nagoya」運営 - 50名規模のイベントを月1回定期開催",
+          "社内技術勉強会の企画・運営 - 月2回の勉強会でチーム全体のスキル向上に寄与"
+        ]
       },
       {
-        title: "モダンフロントエンド開発におけるパフォーマンス最適化",
-        type: "社内勉強会",
-        date: "2023年12月",
-        description: "React・Vue.jsアプリケーションのパフォーマンス改善手法について、バンドルサイズ最適化からレンダリング最適化まで幅広く発表。"
+        name: "個人開発",
+        items: [
+          "IoT気象観測システム - Raspberry Piとセンサーを使った気象データ収集・リアルタイム可視化システム（Python、Flask、SQLite）",
+          "家計簿管理アプリ「MoneyTracker」- React Native製、レシート撮影による自動入力機能付き",
+          "タスク管理ツール「TaskFlow」- Vue.js + Rails APIで構築、ドラッグ&ドロップ操作とチーム協働機能を実装"
+        ]
       }
     ]
   }
