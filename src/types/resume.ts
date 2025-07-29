@@ -26,16 +26,9 @@ export interface ResumeData {
   };
   education: {
     title: string;
-    degrees: Array<{
-      degree: string;
-      institution: string;
-      period: string;
-      location: string;
-    }>;
-    certifications: Array<{
+    categories: Array<{
       name: string;
-      issuer: string;
-      date: string;
+      items: string[];
     }>;
   };
   publications: {

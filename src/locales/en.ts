@@ -82,29 +82,20 @@ export const enData: ResumeData = {
   },
   education: {
     title: "Education & Certifications",
-    degrees: [
+    categories: [
       {
-        degree: "Bachelor of Science and Technology, Information Engineering",
-        institution: "Meijo University",
-        period: "April 2010 - March 2014",
-        location: "Aichi, Japan"
-      }
-    ],
-    certifications: [
-      {
-        name: "Ruby Certified Programmer Gold",
-        issuer: "Ruby Association",
-        date: "2023"
+        name: "Education",
+        items: [
+          "Bachelor of Science and Technology, Information Engineering, Meijo University (April 2010 - March 2014, Aichi, Japan)"
+        ]
       },
       {
-        name: "Fundamental Information Technology Engineer (FE)",
-        issuer: "IPA Information-technology Promotion Agency",
-        date: "2022"
-      },
-      {
-        name: "Applied Information Technology Engineer (AP)",
-        issuer: "IPA Information-technology Promotion Agency",
-        date: "2023"
+        name: "Certifications",
+        items: [
+          "Ruby Certified Programmer Gold - Ruby Association (2023)",
+          "Fundamental Information Technology Engineer (FE) - IPA Information-technology Promotion Agency (2022)",
+          "Applied Information Technology Engineer (AP) - IPA Information-technology Promotion Agency (2023)"
+        ]
       }
     ]
   },

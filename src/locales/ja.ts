@@ -82,29 +82,20 @@ export const jaData: ResumeData = {
   },
   education: {
     title: "学歴・資格",
-    degrees: [
+    categories: [
       {
-        degree: "理工学部 情報工学科",
-        institution: "名城大学",
-        period: "2010年4月 - 2014年3月",
-        location: "愛知県"
-      }
-    ],
-    certifications: [
-      {
-        name: "Ruby技術者認定試験 Gold",
-        issuer: "Ruby Association",
-        date: "2023年"
+        name: "学歴",
+        items: [
+          "理工学部 情報工学科、名城大学 (2010年4月 - 2014年3月、愛知県)"
+        ]
       },
       {
-        name: "基本情報技術者試験 (FE)",
-        issuer: "IPA 情報処理推進機構",
-        date: "2022年"
-      },
-      {
-        name: "応用情報技術者試験 (AP)",
-        issuer: "IPA 情報処理推進機構",
-        date: "2023年"
+        name: "資格・認定",
+        items: [
+          "Ruby技術者認定試験 Gold - Ruby Association (2023年)",
+          "基本情報技術者試験 (FE) - IPA 情報処理推進機構 (2022年)",
+          "応用情報技術者試験 (AP) - IPA 情報処理推進機構 (2023年)"
+        ]
       }
     ]
   },
