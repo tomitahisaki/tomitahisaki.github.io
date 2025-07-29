@@ -1,5 +1,6 @@
 import React from 'react';
 import { ResumeData } from '../types/resume';
+import { LinkedInIcon, GitHubIcon, EmailIcon } from './Icons';
 
 interface HeaderProps {
   data: ResumeData['header'];
@@ -7,36 +8,23 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ data }) => {
   return (
-    <header style={styles.header}>
-      <div style={styles.nameSection}>
-        <h1 style={styles.name}>{data.name}</h1>
-        <h2 style={styles.title}>{data.title}</h2>
+    <header style={styles.header} className="header-mobile-responsive">
+      <div style={styles.leftSection} className="left-section">
+        <div style={styles.nameTitle} className="name-title-mobile">
+          <h1 style={styles.name}>{data.name}</h1>
+          <p style={styles.title}>{data.title}</p>
+        </div>
       </div>
-      <div style={styles.contactSection}>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>Email:</span>
-          <a href={`mailto:${data.email}`} style={styles.contactLink}>
-            {data.email}
+      <div style={styles.rightSection} className="right-section">
+        <div style={styles.iconLinks}>
+          <a href={`mailto:${data.email}`} className="social-link" title="Email">
+            <EmailIcon className="email-icon" />
           </a>
-        </div>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>Phone:</span>
-          <span>{data.phone}</span>
-        </div>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>Location:</span>
-          <span>{data.location}</span>
-        </div>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>LinkedIn:</span>
-          <a href={data.linkedin} target="_blank" rel="noopener noreferrer" style={styles.contactLink}>
-            LinkedIn Profile
+          <a href={data.linkedin} target="_blank" rel="noopener noreferrer" className="social-link" title="LinkedIn">
+            <LinkedInIcon className="linkedin-icon" />
           </a>
-        </div>
-        <div style={styles.contactItem}>
-          <span style={styles.contactLabel}>GitHub:</span>
-          <a href={data.github} target="_blank" rel="noopener noreferrer" style={styles.contactLink}>
-            GitHub Profile
+          <a href={data.github} target="_blank" rel="noopener noreferrer" className="social-link" title="GitHub">
+            <GitHubIcon className="github-icon" />
           </a>
         </div>
       </div>
@@ -46,42 +34,42 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
 
 const styles = {
   header: {
-    padding: '2em',
-    borderBottom: '0.1em solid #e0e0e0',
-    marginBottom: '2em',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexWrap: 'wrap' as const,
+    gap: '1.5em',
   },
-  nameSection: {
-    marginBottom: '1.5em',
+  leftSection: {
+    flex: 1,
+    minWidth: '15em',
+  },
+  nameTitle: {
+    display: 'flex',
+    alignItems: 'baseline',
+    gap: '1em',
+    flexWrap: 'wrap' as const,
   },
   name: {
     fontSize: '2.5em',
     fontWeight: 'bold',
-    margin: '0 0 0.5em 0',
+    margin: '0',
     color: '#333',
   },
   title: {
-    fontSize: '1.5em',
-    fontWeight: '300',
+    fontSize: '1.1em',
+    fontWeight: '400',
     margin: '0',
-    color: '#666',
+    color: '#777',
+    lineHeight: 1.3,
   },
-  contactSection: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(15em, 1fr))',
-    gap: '0.8em',
-  },
-  contactItem: {
+  rightSection: {
     display: 'flex',
-    flexDirection: 'column' as const,
-    gap: '0.3em',
+    alignItems: 'center',
   },
-  contactLabel: {
-    fontSize: '0.9em',
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  contactLink: {
-    color: '#0066cc',
-    textDecoration: 'none',
+  iconLinks: {
+    display: 'flex',
+    gap: '1em',
+    alignItems: 'center',
   },
 };

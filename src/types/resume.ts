@@ -3,8 +3,6 @@ export interface ResumeData {
     name: string;
     title: string;
     email: string;
-    phone: string;
-    location: string;
     linkedin: string;
     github: string;
   };
@@ -19,48 +17,25 @@ export interface ResumeData {
       items: string[];
     }>;
   };
-  experience: {
-    title: string;
-    list: Array<{
-      position: string;
-      company: string;
-      period: string;
-      location: string;
-      responsibilities: string[];
-    }>;
-  };
   projects: {
     title: string;
-    list: Array<{
+    categories: Array<{
       name: string;
-      period: string;
-      technologies: string[];
-      description: string;
-      achievements: string[];
+      items: string[];
     }>;
   };
   education: {
     title: string;
-    degrees: Array<{
-      degree: string;
-      institution: string;
-      period: string;
-      location: string;
-    }>;
-    certifications: Array<{
+    categories: Array<{
       name: string;
-      issuer: string;
-      date: string;
+      items: string[];
     }>;
   };
   publications: {
     title: string;
-    list: Array<{
-      title: string;
-      type: string;
-      date: string;
-      url?: string;
-      description: string;
+    categories: Array<{
+      name: string;
+      items: string[];
     }>;
   };
 }

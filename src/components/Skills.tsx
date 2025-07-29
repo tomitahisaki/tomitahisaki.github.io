@@ -9,17 +9,18 @@ export const Skills: React.FC<SkillsProps> = ({ data }) => {
   return (
     <section style={styles.section}>
       <h2 style={styles.sectionTitle}>{data.title}</h2>
-      <div style={styles.skillsGrid}>
+      <div style={styles.content}>
         {data.categories.map((category, index) => (
           <div key={index} style={styles.skillCategory}>
             <h3 style={styles.categoryTitle}>{category.name}</h3>
-            <div style={styles.skillTags}>
-              {category.items.map((skill, skillIndex) => (
-                <span key={skillIndex} style={styles.skillTag}>
-                  {skill}
-                </span>
+            <ul style={styles.skillsList}>
+              {category.items.map((item, itemIndex) => (
+                <li key={itemIndex} style={styles.skillItem}>
+                  <span style={styles.bullet}>•</span>
+                  {item}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         ))}
       </div>
@@ -29,44 +30,44 @@ export const Skills: React.FC<SkillsProps> = ({ data }) => {
 
 const styles = {
   section: {
-    marginBottom: '2.5em',
-    padding: '0 2em',
+    marginTop: '1em',
   },
   sectionTitle: {
-    fontSize: '1.8em',
+    fontSize: '1.5em',
     fontWeight: 'bold',
-    marginBottom: '1em',
     color: '#333',
-    borderBottom: '0.15em solid #0066cc',
-    paddingBottom: '0.5em',
   },
-  skillsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(20em, 1fr))',
-    gap: '1.5em',
-    marginLeft: '0.5em',
+  content: {
+    margin: '0.5em',
   },
   skillCategory: {
-    marginBottom: '1em',
   },
   categoryTitle: {
-    fontSize: '1.2em',
+    fontSize: '1.1em',
     fontWeight: 'bold',
     marginBottom: '0.8em',
-    color: '#444',
+    color: '#333',
   },
-  skillTags: {
+  skillsList: {
+    listStyle: 'none',
+    padding: '0',
+    margin: '0',
+  },
+  skillItem: {
+    marginBottom: '0.5em',
+    paddingLeft: '1em',
+    position: 'relative' as const,
+    color: '#666',
+    fontSize: '0.95em',
+    lineHeight: '1.5',
     display: 'flex',
-    flexWrap: 'wrap' as const,
+    alignItems: 'flex-start',
     gap: '0.5em',
   },
-  skillTag: {
-    backgroundColor: '#f0f8ff',
+  bullet: {
     color: '#0066cc',
-    padding: '0.4em 0.8em',
-    borderRadius: '1em',
-    fontSize: '0.9em',
-    fontWeight: '500',
-    border: '0.1em solid #0066cc',
+    fontWeight: 'bold',
+    marginTop: '0.1em',
+    flexShrink: 0,
   },
 };
