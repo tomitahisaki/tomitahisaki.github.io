@@ -1,211 +1,33 @@
 @import "tailwindcss";
 
-/* Base styles */
+/* Base styles - Apply to body to match original design */
 body {
   font-family: system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  font-size: 1em;
+  font-size: 1rem;
   color: #333;
   background-color: #f9f9f9;
 }
 
+/* Override Tailwind base for consistent font inheritance */
 html {
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Container */
-.container {
-  max-width: 50em;
-  margin: 0 auto;
-  padding: 1.5em;
-  background: white;
-  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1);
-  border-radius: 0.5em;
-}
-
-/* Language Toggle */
-.language-toggle {
-  text-align: right;
-  margin-bottom: 1.5em;
-}
-
-.lang-btn {
-  background: none;
-  border: 0.1em solid #ddd;
-  padding: 0.4em 0.8em;
-  margin-left: 0.5em;
-  border-radius: 0.3em;
-  cursor: pointer;
-  font-size: 0.9em;
-  transition: all 0.2s ease;
-}
-
-.lang-btn:hover {
-  background-color: #f0f0f0;
-}
-
-.lang-btn.active {
-  background-color: #007bff;
-  color: white;
-  border-color: #007bff;
-}
-
-/* Resume Layout */
-.resume {
-  max-width: 100%;
-}
-
-.resume-main {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-
-/* Social Link Hover Effects */
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 50%;
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.social-link:hover {
-  background-color: #e9ecef;
-  transform: translateY(-0.1em);
-  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.15);
-}
-
-.social-link:hover .linkedin-icon {
+/* Icon hover effects (custom) */
+.inline-flex:hover .linkedin-icon {
   filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%)
     hue-rotate(197deg) brightness(104%) contrast(97%) !important;
 }
 
-.social-link:hover .github-icon {
+.inline-flex:hover .github-icon {
   filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%)
     hue-rotate(0deg) brightness(95%) contrast(80%) !important;
 }
 
-.social-link:hover .email-icon {
+.inline-flex:hover .email-icon {
   filter: brightness(0) saturate(100%) invert(25%) sepia(85%) saturate(2200%)
     hue-rotate(200deg) brightness(100%) contrast(95%) !important;
-}
-
-/* Legacy styles (remove if not needed) */
-.title {
-  margin-top: 20px;
-  font-size: 1.5em;
-  margin-bottom: -20px;
-}
-
-.profile-content,
-.job-content {
-  margin-left: 0.5em;
-}
-
-.profile,
-.experience {
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  margin: -1em 0 0 0.5em;
-}
-
-.job-section,
-.skill-section {
-  margin: -1em 0 0 0.5em;
-}
-
-.job-detail {
-  margin: 0 0 0 1em;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: -1em 0 0 0.5em;
-}
-
-h2 {
-  margin-bottom: 10px;
-  border-bottom: 2px solid #ccc;
-}
-
-p {
-  margin: -1em 0 0 0.5em;
-}
-
-/* Mobile responsive adjustments for header */
-@media (max-width: 48em) {
-  .container {
-    margin: 0;
-    padding: 1em;
-    border-radius: 0;
-  }
-
-  /* Adjust header layout for mobile */
-  .header-mobile-responsive {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1em;
-  }
-
-  .header-mobile-responsive .left-section {
-    min-width: 100%;
-  }
-
-  .header-mobile-responsive .right-section {
-    width: 100%;
-    justify-content: center;
-  }
-
-  /* Mobile: stack name and title vertically */
-  .name-title-mobile {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0.5em !important;
-  }
-}
-
-@media (max-width: 30em) {
-  .container {
-    padding: 0.8em;
-  }
-}
-
-.profile,
-.experience {
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  margin: -1em 0 0 0.5em;
-}
-
-.job-section,
-.skill-section {
-  margin: -1em 0 0 0.5em;
-}
-
-.job-detail {
-  margin: 0 0 0 1em;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: -1em 0 0 0.5em;
-}
-
-h2 {
-  margin-bottom: 10px;
-  border-bottom: 2px solid #ccc;
-}
-
-p {
-  margin: -1em 0 0 0.5em;
 }
