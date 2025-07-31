@@ -27,8 +27,10 @@ export const Resume: React.FC<ResumeProps> = ({
       />
       
       <div className="w-full">
-        <Header data={data.header} />
-        <div className="flex flex-col gap-8">
+        <section className="mb-4">
+          <Header data={data.header} />
+        </section>
+        <div className="flex flex-col">
           <Summary data={data.summary} />
           <Skills data={data.skills} />
           <Projects data={data.projects} />

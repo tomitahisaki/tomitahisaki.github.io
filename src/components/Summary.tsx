@@ -16,33 +16,13 @@ export const Summary: React.FC<SummaryProps> = ({ data }) => {
   };
 
   return (
-    <section style={styles.section}>
-      <h2 style={styles.sectionTitle}>{data.title}</h2>
-      <div style={styles.content}>
-        <p style={styles.summaryText}>
+    <section className="mt-1">
+      <h2 className="text-2xl font-bold text-gray-800">{data.title}</h2>
+      <div className="mt-4">
+        <p className="text-base leading-relaxed text-gray-600 m-2">
           {formatContent(data.content)}
         </p>
       </div>
     </section>
   );
-};
-
-const styles = {
-  section: {
-    marginTop: '1em',
-  },
-  sectionTitle: {
-    fontSize: '1.5em',
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  content: {
-    marginTop: '1em',
-  },
-  summaryText: {
-    fontSize: '1em',
-    lineHeight: '1.6',
-    color: '#666',
-    margin: '0.5em',
-  },
 };

@@ -7,26 +7,25 @@ interface PublicationsProps {
 
 export const Publications: React.FC<PublicationsProps> = ({ data }) => {
   return (
-    <section style={styles.section}>
-      <h2 style={styles.sectionTitle}>{data.title}</h2>
-      <div style={styles.content}>
+    <section className="mt-4">
+      <h2 className="text-2xl font-bold text-gray-800">{data.title}</h2>
+      <div className="m-2">
         {data.categories.map((category, index) => (
-          <div key={index} style={styles.activityCategory}>
-            <h3 style={styles.categoryTitle}>
+          <div key={index} className="">
+            <h3 className="text-lg font-bold mb-3 text-gray-800">
               {category.url ? (
-                <a href={category.url} target="_blank" rel="noopener noreferrer" style={styles.categoryLink}>
+                <a href={category.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 no-underline text-lg font-bold">
                   {category.name}
                 </a>
               ) : (
                 category.name
               )}
             </h3>
-            <ul style={styles.activitiesList}>
+            <ul className="list-disc p-0 m-0 ml-5">
               {category.items.map((item, itemIndex) => (
-                <li key={itemIndex} style={styles.activityItem}>
-                  <span style={styles.bullet}>•</span>
+                <li key={itemIndex} className="mb-2 text-gray-600 text-sm leading-6">
                   {item.url ? (
-                    <a href={item.url} target="_blank" rel="noopener noreferrer" style={styles.itemLink}>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 no-underline text-sm">
                       {item.title}
                     </a>
                   ) : (
@@ -40,59 +39,4 @@ export const Publications: React.FC<PublicationsProps> = ({ data }) => {
       </div>
     </section>
   );
-};
-
-const styles = {
-  section: {
-    marginTop: '1em',
-  },
-  sectionTitle: {
-    fontSize: '1.5em',
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  content: {
-    margin: '0.5em',
-  },
-  activityCategory: {
-  },
-  categoryTitle: {
-    fontSize: '1.1em',
-    fontWeight: 'bold',
-    marginBottom: '0.8em',
-    color: '#333',
-  },
-  categoryLink: {
-    color: '#0066cc',
-    textDecoration: 'none',
-    fontSize: '1.1em',
-    fontWeight: 'bold',
-  },
-  activitiesList: {
-    listStyle: 'none',
-    padding: '0',
-    margin: '0',
-  },
-  activityItem: {
-    marginBottom: '0.5em',
-    paddingLeft: '1em',
-    position: 'relative' as const,
-    color: '#666',
-    fontSize: '0.95em',
-    lineHeight: '1.5',
-    display: 'flex',
-    alignItems: 'flex-start',
-    gap: '0.5em',
-  },
-  itemLink: {
-    color: '#0066cc',
-    textDecoration: 'none',
-    fontSize: '0.95em',
-  },
-  bullet: {
-    color: '#0066cc',
-    fontWeight: 'bold',
-    marginTop: '0.1em',
-    flexShrink: 0,
-  },
 };
