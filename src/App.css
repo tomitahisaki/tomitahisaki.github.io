@@ -1,79 +1,33 @@
-html {
-  font-family: sans-serif;
-}
+@import "tailwindcss";
 
-.container {
-  max-width: 46.875em;
-  margin: 0 auto;
-  padding: 0 5px;
-}
-
-/* 言語切り替えボタンのスタイル */
-.language-toggle {
-  display: flex;
-  justify-content: flex-end;
-  margin: 20px 0 10px 0;
-  gap: 10px;
-}
-
-.lang-btn {
-  padding: 8px 16px;
-  border: 2px solid #007bff;
-  background-color: #fff;
-  color: #007bff;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 14px;
-  transition: all 0.3s ease;
-}
-
-.lang-btn:hover {
-  background-color: #f8f9fa;
-}
-
-.lang-btn.active {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.title {
-  margin-top: 20px;
-  font-size: 1.5em;
-  margin-bottom: -20px;
-}
-
-.profile-content,
-.job-content {
-  margin-left: 0.5em;
-}
-
-.profile,
-.experience {
-  display: grid;
-  grid-template-columns: 3fr 5fr;
-  margin: -1em 0 0 0.5em;
-}
-
-.job-section,
-.skill-section {
-  margin: -1em 0 0 0.5em;
-}
-
-.job-detail {
-  margin: 0 0 0 1em;
-}
-
-ul {
-  list-style-type: none;
+/* Base styles - Apply to body to match original design */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
   padding: 0;
-  margin: -1em 0 0 0.5em;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-h2 {
-  margin-bottom: 10px;
-  border-bottom: 2px solid #ccc;
+/* Override Tailwind base for consistent font inheritance */
+html {
+  font-family: system-ui, -apple-system, sans-serif;
 }
 
-p {
-  margin: -1em 0 0 0.5em;
+/* Icon hover effects (custom) */
+.inline-flex:hover .linkedin-icon {
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%)
+    hue-rotate(197deg) brightness(104%) contrast(97%) !important;
+}
+
+.inline-flex:hover .github-icon {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%)
+    hue-rotate(0deg) brightness(95%) contrast(80%) !important;
+}
+
+.inline-flex:hover .email-icon {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(85%) saturate(2200%)
+    hue-rotate(200deg) brightness(100%) contrast(95%) !important;
 }

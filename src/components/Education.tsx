@@ -7,16 +7,15 @@ interface EducationProps {
 
 export const Education: React.FC<EducationProps> = ({ data }) => {
   return (
-    <section style={styles.section}>
-      <h2 style={styles.sectionTitle}>{data.title}</h2>
-      <div style={styles.content}>
+    <section className="mt-4">
+      <h2 className="text-2xl font-bold text-gray-800">{data.title}</h2>
+      <div className="m-2">
         {data.categories.map((category, index) => (
-          <div key={index} style={styles.educationCategory}>
-            <h3 style={styles.categoryTitle}>{category.name}</h3>
-            <ul style={styles.educationList}>
+          <div key={index} className="">
+            <h3 className="text-lg font-bold mb-3 text-gray-800">{category.name}</h3>
+            <ul className="list-disc p-0 m-0 ml-5">
               {category.items.map((item, itemIndex) => (
-                <li key={itemIndex} style={styles.educationItem}>
-                  <span style={styles.bullet}>•</span>
+                <li key={itemIndex} className="mb-2 text-gray-600 text-sm leading-6">
                   {item}
                 </li>
               ))}
@@ -26,48 +25,4 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
       </div>
     </section>
   );
-};
-
-const styles = {
-  section: {
-    marginTop: '1em',
-  },
-  sectionTitle: {
-    fontSize: '1.5em',
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  content: {
-    margin: '0.5em',
-  },
-  educationCategory: {
-  },
-  categoryTitle: {
-    fontSize: '1.1em',
-    fontWeight: 'bold',
-    marginBottom: '0.8em',
-    color: '#333',
-  },
-  educationList: {
-    listStyle: 'none',
-    padding: '0',
-    margin: '0',
-  },
-  educationItem: {
-    marginBottom: '0.5em',
-    paddingLeft: '1em',
-    position: 'relative' as const,
-    color: '#666',
-    fontSize: '0.95em',
-    lineHeight: '1.5',
-    display: 'flex',
-    alignItems: 'flex-start',
-    gap: '0.5em',
-  },
-  bullet: {
-    color: '#0066cc',
-    fontWeight: 'bold',
-    marginTop: '0.1em',
-    flexShrink: 0,
-  },
 };
