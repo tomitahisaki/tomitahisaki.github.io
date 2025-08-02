@@ -5,7 +5,7 @@ export const jaData: ResumeData = {
     name: "冨田 久樹",
     title: "ウェブデベロッパー",
     email: "alltimelow2011@gmail.com",
-    linkedin: "https://linkedin.com/in/hisaki-tomita",
+    linkedin: "https://www.linkedin.com/in/hisaki-tomita-200750287/",
     github: "https://github.com/tomitahisaki"
   },
   summary: {

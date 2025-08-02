@@ -5,7 +5,7 @@ export const enData: ResumeData = {
     name: "Hisaki Tomita",
     title: "Web Developer",
     email: "alltimelow2011@gmail.com",
-    linkedin: "https://linkedin.com/in/hisaki-tomita",
+    linkedin: "https://www.linkedin.com/in/hisaki-tomita-200750287/",
     github: "https://github.com/tomitahisaki"
   },
   summary: {
