@@ -32,7 +32,7 @@ export interface ResumeData {
     title: string;
     categories: Array<{
       name: string;
-      items: string[];
+      items: string;
     }>;
   };
   education: {
