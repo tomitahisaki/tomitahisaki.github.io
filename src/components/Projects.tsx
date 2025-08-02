@@ -14,7 +14,7 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
           <div key={index} className="mb-2">
             <h3 className="text-lg font-bold text-gray-800">{category.name}</h3>
             <p className="text-sm leading-relaxed text-gray-600 m-1">
-              {category.items.join('。')}。
+              {category.items}
             </p>
           </div>
         ))}
