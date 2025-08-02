@@ -16,10 +16,10 @@ export const Summary: React.FC<SummaryProps> = ({ data }) => {
   };
 
   return (
-    <section className="mt-1">
+    <section className="m-1">
       <h2 className="text-2xl font-bold text-gray-800">{data.title}</h2>
-      <div className="mt-4">
-        <p className="text-base leading-relaxed text-gray-600 m-2">
+      <div className='m-2'>
+        <p className="text-sm leading-relaxed text-gray-600">
           {formatContent(data.content)}
         </p>
       </div>

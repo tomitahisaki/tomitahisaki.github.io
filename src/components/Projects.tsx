@@ -7,19 +7,15 @@ interface ProjectsProps {
 
 export const Projects: React.FC<ProjectsProps> = ({ data }) => {
   return (
-    <section className="mt-4">
+    <section className="m-1">
       <h2 className="text-2xl font-bold text-gray-800">{data.title}</h2>
       <div className="m-2">
         {data.categories.map((category, index) => (
-          <div key={index} className="">
-            <h3 className="text-lg font-bold mb-3 text-gray-800">{category.name}</h3>
-            <ul className="list-disc p-0 m-0 ml-5">
-              {category.items.map((item, itemIndex) => (
-                <li key={itemIndex} className="mb-2 text-gray-600 text-sm leading-6">
-                  {item}
-                </li>
-              ))}
-            </ul>
+          <div key={index} className="mb-2">
+            <h3 className="text-lg font-bold text-gray-800">{category.name}</h3>
+            <p className="text-sm leading-relaxed text-gray-600 m-1">
+              {category.items.join('。')}。
+            </p>
           </div>
         ))}
       </div>
