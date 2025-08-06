@@ -15,25 +15,15 @@ export const LanguageToggle: React.FC<LanguageToggleProps> = ({
     <div className="text-right mb-6">
       <button
         onClick={() => onLanguageChange(currentLanguage === 'ja' ? 'en' : 'ja')}
-        className="relative inline-flex items-center px-3 py-1 border rounded shadow-sm bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        aria-label="toggle language"
+        className={`inline-flex items-center justify-center px-3 py-2 shadow-sm hover:opacity-80 ${
+          currentLanguage === 'en' 
+            ? 'bg-blue-500 text-white' 
+            : 'bg-white text-gray-700'
+        }`}
+        aria-label={`Switch to ${currentLanguage === 'ja' ? 'English' : 'Japanese'}`}
+        title={`Switch to ${currentLanguage === 'ja' ? 'English' : 'Japanese'}`}
       >
         <MdTranslate size={20} />
-        <span className={`ml-1 text-xs font-semibold transition-opacity duration-200 ${
-          currentLanguage === 'ja' 
-            ? 'opacity-100' 
-            : 'opacity-50'
-        }`}>
-          JP
-        </span>
-        <span className="mx-1 text-xs text-gray-400">|</span>
-        <span className={`text-xs font-semibold transition-opacity duration-200 ${
-          currentLanguage === 'en' 
-            ? 'opacity-100' 
-            : 'opacity-50'
-        }`}>
-          EN
-        </span>
       </button>
     </div>
   );
