@@ -1,6 +1,5 @@
 import React from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import { MdTranslate } from 'react-icons/md';
 
 interface LanguageToggleProps {
   currentLanguage: 'ja' | 'en';
@@ -11,31 +10,31 @@ export const LanguageToggle: React.FC<LanguageToggleProps> = ({
   currentLanguage,
   onLanguageChange,
 }) => {
-  const handleChange = (
-    _event: React.MouseEvent<HTMLElement>,
-    newLanguage: 'ja' | 'en' | null,
-  ) => {
-    if (newLanguage) {
-      onLanguageChange(newLanguage);
-    }
-  };
 
   return (
     <div className="text-right mb-6">
-      <ToggleButtonGroup
-        size="small"
-        value={currentLanguage}
-        exclusive
-        onChange={handleChange}
-        aria-label="language"
+      <button
+        onClick={() => onLanguageChange(currentLanguage === 'ja' ? 'en' : 'ja')}
+        className="relative inline-flex items-center px-3 py-1 border rounded shadow-sm bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        aria-label="toggle language"
       >
-        <ToggleButton value="ja" aria-label="japanese">
-          日本語
-        </ToggleButton>
-        <ToggleButton value="en" aria-label="english">
-          English
-        </ToggleButton>
-      </ToggleButtonGroup>
+        <MdTranslate size={20} />
+        <span className={`ml-1 text-xs font-semibold transition-opacity duration-200 ${
+          currentLanguage === 'ja' 
+            ? 'opacity-100' 
+            : 'opacity-50'
+        }`}>
+          JP
+        </span>
+        <span className="mx-1 text-xs text-gray-400">|</span>
+        <span className={`text-xs font-semibold transition-opacity duration-200 ${
+          currentLanguage === 'en' 
+            ? 'opacity-100' 
+            : 'opacity-50'
+        }`}>
+          EN
+        </span>
+      </button>
     </div>
   );
 };
