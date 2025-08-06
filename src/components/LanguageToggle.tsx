@@ -1,4 +1,6 @@
 import React from 'react';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 
 interface LanguageToggleProps {
   currentLanguage: 'ja' | 'en';
@@ -9,24 +11,31 @@ export const LanguageToggle: React.FC<LanguageToggleProps> = ({
   currentLanguage,
   onLanguageChange,
 }) => {
+  const handleChange = (
+    _event: React.MouseEvent<HTMLElement>,
+    newLanguage: 'ja' | 'en' | null,
+  ) => {
+    if (newLanguage) {
+      onLanguageChange(newLanguage);
+    }
+  };
+
   return (
     <div className="text-right mb-6">
-      <button
-        className={`bg-transparent border border-gray-300 px-3 py-1.5 ml-2 rounded cursor-pointer text-sm transition-all duration-200 ease-in-out hover:bg-gray-100 ${
-          currentLanguage === 'ja' ? 'bg-blue-500 text-white border-blue-500' : ''
-        }`}
-        onClick={() => onLanguageChange('ja')}
+      <ToggleButtonGroup
+        size="small"
+        value={currentLanguage}
+        exclusive
+        onChange={handleChange}
+        aria-label="language"
       >
-        日本語
-      </button>
-      <button
-        className={`bg-transparent border border-gray-300 px-3 py-1.5 ml-2 rounded cursor-pointer text-sm transition-all duration-200 ease-in-out hover:bg-gray-100 ${
-          currentLanguage === 'en' ? 'bg-blue-500 text-white border-blue-500' : ''
-        }`}
-        onClick={() => onLanguageChange('en')}
-      >
-        English
-      </button>
+        <ToggleButton value="ja" aria-label="japanese">
+          日本語
+        </ToggleButton>
+        <ToggleButton value="en" aria-label="english">
+          English
+        </ToggleButton>
+      </ToggleButtonGroup>
     </div>
   );
 };
