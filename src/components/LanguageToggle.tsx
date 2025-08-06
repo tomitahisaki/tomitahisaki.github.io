@@ -1,6 +1,5 @@
 import React from 'react';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import { MdTranslate } from 'react-icons/md';
 
 interface LanguageToggleProps {
   currentLanguage: 'ja' | 'en';
@@ -11,31 +10,21 @@ export const LanguageToggle: React.FC<LanguageToggleProps> = ({
   currentLanguage,
   onLanguageChange,
 }) => {
-  const handleChange = (
-    _event: React.MouseEvent<HTMLElement>,
-    newLanguage: 'ja' | 'en' | null,
-  ) => {
-    if (newLanguage) {
-      onLanguageChange(newLanguage);
-    }
-  };
 
   return (
     <div className="text-right mb-6">
-      <ToggleButtonGroup
-        size="small"
-        value={currentLanguage}
-        exclusive
-        onChange={handleChange}
-        aria-label="language"
+      <button
+        onClick={() => onLanguageChange(currentLanguage === 'ja' ? 'en' : 'ja')}
+        className={`inline-flex items-center justify-center px-3 py-2 shadow-sm hover:opacity-80 ${
+          currentLanguage === 'en' 
+            ? 'bg-blue-500 text-white' 
+            : 'bg-white text-gray-700'
+        }`}
+        aria-label={`Switch to ${currentLanguage === 'ja' ? 'English' : 'Japanese'}`}
+        title={`Switch to ${currentLanguage === 'ja' ? 'English' : 'Japanese'}`}
       >
-        <ToggleButton value="ja" aria-label="japanese">
-          日本語
-        </ToggleButton>
-        <ToggleButton value="en" aria-label="english">
-          English
-        </ToggleButton>
-      </ToggleButtonGroup>
+        <MdTranslate size={20} />
+      </button>
     </div>
   );
 };
