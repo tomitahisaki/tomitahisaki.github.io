@@ -49,10 +49,6 @@ export const enData: ResumeData = {
         name: "Educational Platform Renovation | WYRD Inc. (June 2023 - October 2023)",
         items: "I participated in a project to replace an existing educational platform from CakePHP to React & Rails architecture. In addition to implementing integration APIs with core systems for email sending and inquiry management, I was responsible for CMS design and development, enabling flexible content management."
       },
-      {
-        name: "Ruby on Rails Learning & Portfolio Development | RUNTEQ (August 2022 - May 2023)",
-        items: "I studied web application development centered on Ruby on Rails at RUNTEQ, acquiring practical development skills. As a result of my studies, I developed a portfolio web application using Google Maps API and scraping technologies."
-      }
     ]
   },
   education: {

@@ -49,10 +49,6 @@ export const jaData: ResumeData = {
         name: "教育プラットフォーム刷新 | 株式会社WYRD (2023/06 - 2023/10)",
         items: "既存の教育プラットフォームをCakePHPからReact・Rails構成にリプレイスするプロジェクトに参画しました。メール送信や問い合わせ管理などの基幹システムとの連携APIの実装に加え、CMSの設計・開発を担当し、柔軟なコンテンツ管理を可能にしました。"
       },
-      {
-        name: "Ruby on Rails学習・ポートフォリオ開発 | RUNTEQ (2022/08 - 2023/05)",
-        items: "RUNTEQにてRuby on Railsを中心としたWebアプリケーション開発を学習し、実践的な開発スキルを習得しました。学習の成果として、Google Maps APIやスクレイピング技術を用いたポートフォリオWebアプリを開発しました。"
-      }
     ]
   },
   education: {

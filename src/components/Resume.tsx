@@ -1,5 +1,7 @@
-import React from 'react';
-import { LanguageToggle } from './LanguageToggle';
+import React, { useRef } from 'react';
+import { useReactToPrint } from 'react-to-print';
+import { TopControls } from './TopControls';
+import { PrintableResume } from './PrintableResume';
 import { Header } from './Header';
 import { Summary } from './Summary';
 import { Skills } from './Skills';
@@ -19,11 +21,19 @@ export const Resume: React.FC<ResumeProps> = ({
   currentLanguage,
   onLanguageChange,
 }) => {
+  const printRef = useRef<HTMLDivElement>(null);
+
+  const handlePrint = useReactToPrint({
+    contentRef: printRef,
+    documentTitle: currentLanguage === 'ja' ? '履歴書 - 冨田久樹' : 'Resume - Hisaki Tomita',
+  });
+
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <LanguageToggle
+      <TopControls
         currentLanguage={currentLanguage}
         onLanguageChange={onLanguageChange}
+        onPrint={handlePrint}
       />
       
       <div className="w-full">
@@ -36,6 +46,13 @@ export const Resume: React.FC<ResumeProps> = ({
           <Projects data={data.projects} />
           <Education data={data.education} />
           <Publications data={data.publications} />
+        </div>
+      </div>
+
+      {/* Hidden printable version */}
+      <div style={{ display: 'none' }}>
+        <div ref={printRef}>
+          <PrintableResume data={data} />
         </div>
       </div>
     </div>
