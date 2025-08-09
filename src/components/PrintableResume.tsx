@@ -13,7 +13,7 @@ interface PrintableResumeProps {
 
 export const PrintableResume: React.FC<PrintableResumeProps> = ({ data }) => {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white">
+    <div className="max-w-4xl mx-auto p-6 bg-white print:p-12 print:max-w-full">
       <div className="w-full">
         <section className="mb-3">
           <h1 className="text-3xl font-bold text-gray-900">{data.header.name}</h1>
@@ -22,7 +22,9 @@ export const PrintableResume: React.FC<PrintableResumeProps> = ({ data }) => {
           <Summary data={data.summary} />
           <Skills data={data.skills} />
           <Projects data={data.projects} />
-          <Education data={data.education} />
+          <div className="print:break-before-page print:pt-12">
+            <Education data={data.education} />
+          </div>
           <Publications data={data.publications} />
         </div>
       </div>
