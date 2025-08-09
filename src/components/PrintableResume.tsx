@@ -15,8 +15,8 @@ export const PrintableResume: React.FC<PrintableResumeProps> = ({ data }) => {
   return (
     <div className="max-w-4xl mx-auto p-6 bg-white">
       <div className="w-full">
-        <section className="mb-2">
-          <Header data={data.header} />
+        <section className="mb-3">
+          <h1 className="text-3xl font-bold text-gray-900">{data.header.name}</h1>
         </section>
         <div className="flex flex-col">
           <Summary data={data.summary} />
