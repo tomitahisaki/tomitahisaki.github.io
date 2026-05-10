@@ -7,25 +7,25 @@ interface PublicationsProps {
 
 export const Publications: React.FC<PublicationsProps> = ({ data }) => {
   return (
-    <section className="m-1">
-      <h2 className="text-2xl font-bold text-gray-800">{data.title}</h2>
-      <div className="m-2">
+    <section className="mb-6">
+      <h2 className="text-2xl font-bold text-gray-800 mb-4">{data.title}</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {data.categories.map((category, index) => (
-          <div key={index} >
-            <h3 className="text-lg font-bold text-gray-800">
+          <div key={index} className="bg-gray-50 rounded-lg p-5">
+            <h3 className="text-lg font-bold text-gray-800 mb-3">
               {category.url ? (
-                <a href={category.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 no-underline text-lg font-bold">
+                <a href={category.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">
                   {category.name}
                 </a>
               ) : (
                 category.name
               )}
             </h3>
-            <ul className="list-disc p-0 m-0 ml-5">
+            <ul className="space-y-2">
               {category.items.map((item, itemIndex) => (
                 <li key={itemIndex} className="text-gray-600 text-sm leading-6">
                   {item.url ? (
-                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 no-underline text-sm">
+                    <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 no-underline">
                       {item.title}
                     </a>
                   ) : (

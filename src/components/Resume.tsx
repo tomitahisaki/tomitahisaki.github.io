@@ -29,30 +29,34 @@ export const Resume: React.FC<ResumeProps> = ({
   });
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <TopControls
-        currentLanguage={currentLanguage}
-        onLanguageChange={onLanguageChange}
-        onPrint={handlePrint}
-      />
-      
-      <div className="w-full">
-        <section className="mb-2">
-          <Header data={data.header} />
-        </section>
-        <div className="flex flex-col">
-          <Summary data={data.summary} />
-          <Skills data={data.skills} />
-          <Projects data={data.projects} />
-          <Education data={data.education} />
-          <Publications data={data.publications} />
-        </div>
-      </div>
+    <div className="min-h-screen bg-gray-50">
+      <div className="max-w-5xl mx-auto p-6">
+        <div className="bg-white shadow-lg rounded-lg p-8">
+          <TopControls
+            currentLanguage={currentLanguage}
+            onLanguageChange={onLanguageChange}
+            onPrint={handlePrint}
+          />
+          
+          <div className="w-full mt-6">
+            <section className="mb-6">
+              <Header data={data.header} />
+            </section>
+            <div className="flex flex-col">
+              <Summary data={data.summary} />
+              <Skills data={data.skills} />
+              <Projects data={data.projects} />
+              <Education data={data.education} />
+              <Publications data={data.publications} />
+            </div>
+          </div>
 
-      {/* Hidden printable version */}
-      <div style={{ display: 'none' }}>
-        <div ref={printRef}>
-          <PrintableResume data={data} />
+          {/* Hidden printable version */}
+          <div style={{ display: 'none' }}>
+            <div ref={printRef}>
+              <PrintableResume data={data} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
