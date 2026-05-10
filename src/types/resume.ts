@@ -9,6 +9,21 @@ export interface PublicationCategory {
   items: PublicationItem[];
 }
 
+export interface SkillItem {
+  title: string;
+  details?: string[];
+}
+
+export interface WorkExperience {
+  company: string;
+  position: string;
+  period: string;
+  overview: string;
+  technologies: string[];
+  responsibilities: string[];
+  achievements: string[];
+}
+
 export interface ResumeData {
   header: {
     name: string;
@@ -25,15 +40,17 @@ export interface ResumeData {
     title: string;
     categories: Array<{
       name: string;
-      items: string[];
+      items: string[] | SkillItem[];
     }>;
   };
   projects: {
     title: string;
-    categories: Array<{
-      name: string;
-      items: string;
-    }>;
+    labels: {
+      technologies: string;
+      responsibilities: string;
+      achievements: string;
+    };
+    experiences: WorkExperience[];
   };
   education: {
     title: string;

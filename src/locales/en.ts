@@ -10,45 +10,94 @@ export const enData: ResumeData = {
   },
   summary: {
     title: "Summary",
-    content: "I live by the motto \"Think about what can be done rather than why it can't be done\" and strive to act positively. I'm skilled at identifying problems and thinking about solutions to resolve them, and I have continuously worked on improvements to help users (customers and employees) have better experiences.\nI have been involved in multiple products including redevelopment of membership sites for tutoring services, development of core system integration APIs, feature development for logistics industry business systems, and operation and maintenance of e-commerce sites. To minimize development setbacks, I consult with managers whenever specifications are unclear and define requirements before development to reduce waste.\nI consulted about my desire to be involved in task creation and design, and created opportunities to participate in task creation and design to ensure appropriate granularity. I strive to keep pull requests at an appropriate size so that reviewers are not burdened and can review quickly.\nTo improve my foundational technical skills, I write technical blogs and pursue certifications outside of work. I also build LAMP environments and work on projects using Raspberry Pi, continuously learning and improving my technical skills.",
+    content: "Focused on web application development, specializing in backend development, database design, and API design. Extensive experience in business system development using Ruby on Rails, including redevelopment of membership sites for tutoring services, core system integration API development, logistics industry business system development, and e-commerce site operation and maintenance. Also experienced in frontend development using React / TypeScript, capable of full-stack development. Value the principle of \"thinking about what can be done rather than why it can't be done,\" continuously working on improvements to provide better experiences for users and operators. Actively consult and clarify unclear specifications to minimize development setbacks. Proactively involved in task breakdown and design, striving to create pull requests with appropriate granularity for easier review. Currently studying and developing design and computer science fundamentals, and outside of work, engaging in continuous learning through technical blog writing and personal projects using Raspberry Pi.",
   },
   skills: {
     title: "Skills",
     categories: [
       {
-        name: "Main Technologies Used in Professional Work",
+        name: "Strengths",
         items: [
-          "Languages & Frameworks: Ruby (Rails), JavaScript (React.js, Vue.js)",
-          "Databases: MySQL",
-          "Environment & Tools: Docker, GitHub, GitHub Actions, Slack, Figma",
-          "Development Style: GitHub Flow, PR-based development, Code Review, Weekly Scrum"
+          {
+            title: "Backend Development",
+            details: [
+              "Business system development using Ruby on Rails",
+              "API design and external system integration",
+              "Batch processing development and operational maintenance"
+            ]
+          },
+          {
+            title: "Database Design & Optimization",
+            details: [
+              "Database design using MySQL",
+              "Query optimization",
+              "Performance improvements including N+1 problem resolution"
+            ]
+          },
+          {
+            title: "Maintenance & Improvement",
+            details: [
+              "Refactoring",
+              "Maintainability improvement through separation of concerns",
+              "Specification clarification and review efficiency improvement"
+            ]
+          },
+          {
+            title: "Frontend",
+            details: [
+              "React / Vue.js / TypeScript",
+              "Full-stack development capability"
+            ]
+          }
         ]
       },
       {
-        name: "Technologies Used in Learning & Personal Development",
+        name: "Tech Stack",
         items: [
-          "Python, Golang, TypeScript",
-          "IoT projects with Raspberry Pi",
-          "Technical blog writing, studying for certifications (Web API design, CS fundamentals, etc.)"
+          "Backend: Ruby on Rails, Python, Golang",
+          "Frontend: React, Vue.js, TypeScript",
+          "Database: MySQL",
+          "Infrastructure & Tools: Docker, GitHub, GitHub Actions, Slack, Figma",
+          "Development Methodology: GitHub Flow, Agile Development, Scrum"
         ]
       }
     ]
   },
   projects: {
-    title: "Work Experience & Projects",
-    categories: [
+    title: "Work Experience",
+    labels: {
+      technologies: "Technologies",
+      responsibilities: "Responsibilities",
+      achievements: "Achievements"
+    },
+    experiences: [
       {
-        name: "Logistics DX SaaS Development | WYRD Inc. (January 2024 - Present)",
-        items: "I am involved in developing SaaS applications for the logistics industry, implementing backend functionality using Ruby on Rails and frontend using Vue and React. Specifically, I handle new development and existing extensions for bulk registration/update features and CSV import functionality, while also working on performance improvements for existing features. Additionally, I work on new integrations with external APIs and improvements to existing API specifications, and I also handle new feature development for legal compliance requirements."
-      },
-      {
-        name: "E-commerce Site Maintenance & Extension | WYRD Inc. (October 2023 - Present)",
-        items: "I am responsible for the operation and maintenance of e-commerce sites using Shopify, handling daily maintenance tasks as well as feature extensions. Specifically, I implement Slack integrations and develop custom applications using Remix (not yet in production), contributing to improved operability and convenience."
-      },
-      {
-        name: "Educational Platform Renovation | WYRD Inc. (June 2023 - October 2023)",
-        items: "I participated in a project to replace an existing educational platform from CakePHP to React & Rails architecture. In addition to implementing integration APIs with core systems for email sending and inquiry management, I was responsible for CMS design and development, enabling flexible content management."
-      },
+        company: "WYRD Inc.",
+        position: "Web Engineer",
+        period: "June 2023 - May 2026",
+        overview: "Engaged in development and maintenance of multiple products including Logistics DX SaaS, educational platforms, and e-commerce site operations.",
+        technologies: [
+          "Ruby on Rails",
+          "React",
+          "Vue.js",
+          "Shopify",
+          "Remix",
+          "MySQL",
+          "Docker"
+        ],
+        responsibilities: [
+          "Business system feature development and maintenance",
+          "External API integration",
+          "Performance improvement",
+          "Shopify operations and feature extensions",
+          "QA"
+        ],
+        achievements: [
+          "CSV bulk registration and update feature design and development",
+          "Legal compliance feature design and development",
+          "Edit history feature design and development"
+        ]
+      }
     ]
   },
   education: {
