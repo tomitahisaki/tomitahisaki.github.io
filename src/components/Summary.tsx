@@ -16,9 +16,9 @@ export const Summary: React.FC<SummaryProps> = ({ data }) => {
   };
 
   return (
-    <section className="m-1">
-      <h2 className="text-2xl font-bold text-gray-800">{data.title}</h2>
-      <div className='m-2'>
+    <section className="mb-5">
+      <h2 className="text-2xl font-bold text-gray-800 mb-3">{data.title}</h2>
+      <div className="bg-gray-50 rounded-lg p-5">
         <p className="text-sm leading-relaxed text-gray-600">
           {formatContent(data.content)}
         </p>

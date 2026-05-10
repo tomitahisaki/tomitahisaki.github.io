@@ -3,7 +3,7 @@ import type { ResumeData } from '../types/resume';
 export const jaData: ResumeData = {
   header: {
     name: "冨田 久樹",
-    title: "ウェブデベロッパー",
+    title: "ソフトウェアエンジニア",
     email: "alltimelow2011@gmail.com",
     linkedin: "https://www.linkedin.com/in/hisaki-tomita-200750287/",
     github: "https://github.com/tomitahisaki"
@@ -54,11 +54,11 @@ export const jaData: ResumeData = {
       {
         name: "技術スタック",
         items: [
-          "バックエンド：Ruby on Rails, Python, Golang",
-          "フロントエンド：React, Vue.js, TypeScript",
-          "データベース：MySQL",
-          "インフラ・ツール：Docker, GitHub, GitHub Actions, Slack, Figma",
-          "開発手法：GitHub Flow, アジャイル開発, スクラム"
+          "バックエンド: Ruby on Rails, Python, Golang",
+          "フロントエンド: React, Vue.js, TypeScript",
+          "データベース: MySQL",
+          "インフラ・ツール: Docker, GitHub, GitHub Actions, Slack, Figma",
+          "開発手法: GitHub Flow, アジャイル開発, スクラム"
         ]
       }
     ]
@@ -106,16 +106,16 @@ export const jaData: ResumeData = {
       {
         name: "学歴",
         items: [
-          "名城大学 理工学部 環境創造学科 （2011/04 - 2015/03）",
+          "名城大学 理工学部 環境創造学科 (2011/04 - 2015/03)",
         ]
       },
       {
         name: "資格・認定",
         items: [
-          "Ruby技術者認定試験 Gold - Ruby Association (2023/09)",
-          "基本情報技術者試験 (FE) - IPA 情報処理推進機構 (2024/01)",
-          "応用情報技術者試験 (AP) - IPA 情報処理推進機構 (2024/07)",
-          "TOIEC Listening & Reading 760点 (2024/07)",
+          "Ruby技術者認定試験 Gold (2023/09)",
+          "基本情報技術者試験 (2024/01)",
+          "応用情報技術者試験 (2024/07)",
+          "TOEIC L&R 760点 (2024/07)",
         ]
       }
     ]
@@ -151,7 +151,7 @@ export const jaData: ResumeData = {
         name: "個人開発",
         items: [
           {
-            title: "IoT温湿度管理システム(開発中) - Raspberry Piとセンサーを使った温湿度管理システム（Python, Golang, React）",
+            title: "IoT温湿度管理システム(開発中) - Raspberry Piとセンサーを使った温湿度管理システム (Python, Golang, React)",
             url: "https://github.com/tomitahisaki/device-platform"
           },
           {

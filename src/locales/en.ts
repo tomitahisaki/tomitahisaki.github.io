@@ -3,7 +3,7 @@ import type { ResumeData } from '../types/resume';
 export const enData: ResumeData = {
   header: {
     name: "Hisaki Tomita",
-    title: "Web Developer",
+    title: "Software Engineer",
     email: "alltimelow2011@gmail.com",
     linkedin: "https://www.linkedin.com/in/hisaki-tomita-200750287/",
     github: "https://github.com/tomitahisaki"
@@ -112,10 +112,10 @@ export const enData: ResumeData = {
       {
         name: "Certifications",
         items: [
-          "Ruby Certified Programmer Gold - Ruby Association (September 2023)",
-          "Fundamental Information Technology Engineer (FE) - IPA Information-technology Promotion Agency (January 2024)",
-          "Applied Information Technology Engineer (AP) - IPA Information-technology Promotion Agency (July 2024)",
-          "TOEIC Listening & Reading 760 points (July 2024)"
+          "Ruby Certified Programmer Gold (Sep 2023)",
+          "Fundamental Information Technology Engineer (Jan 2024)",
+          "Applied Information Technology Engineer (Jul 2024)",
+          "TOEIC L&R 760 points (Jul 2024)"
         ]
       }
     ]
