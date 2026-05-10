@@ -106,7 +106,7 @@ export const jaData: ResumeData = {
       {
         name: "学歴",
         items: [
-          "名城大学 理工学部 環境創造学科 （2011/04 - 2015/03）",
+          "名城大学 理工学部 環境創造学科 (2011/04 - 2015/03)",
         ]
       },
       {
@@ -151,7 +151,7 @@ export const jaData: ResumeData = {
         name: "個人開発",
         items: [
           {
-            title: "IoT温湿度管理システム(開発中) - Raspberry Piとセンサーを使った温湿度管理システム（Python, Golang, React）",
+            title: "IoT温湿度管理システム(開発中) - Raspberry Piとセンサーを使った温湿度管理システム (Python, Golang, React)",
             url: "https://github.com/tomitahisaki/device-platform"
           },
           {
