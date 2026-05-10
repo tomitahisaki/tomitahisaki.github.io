@@ -112,10 +112,10 @@ export const jaData: ResumeData = {
       {
         name: "資格・認定",
         items: [
-          "Ruby技術者認定試験 Gold - Ruby Association (2023/09)",
-          "基本情報技術者試験 (FE) - IPA 情報処理推進機構 (2024/01)",
-          "応用情報技術者試験 (AP) - IPA 情報処理推進機構 (2024/07)",
-          "TOIEC Listening & Reading 760点 (2024/07)",
+          "Ruby技術者認定試験 Gold (2023/09)",
+          "基本情報技術者試験 (2024/01)",
+          "応用情報技術者試験 (2024/07)",
+          "TOEIC L&R 760点 (2024/07)",
         ]
       }
     ]

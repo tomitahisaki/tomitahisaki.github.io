@@ -112,10 +112,10 @@ export const enData: ResumeData = {
       {
         name: "Certifications",
         items: [
-          "Ruby Certified Programmer Gold - Ruby Association (September 2023)",
-          "Fundamental Information Technology Engineer (FE) - IPA Information-technology Promotion Agency (January 2024)",
-          "Applied Information Technology Engineer (AP) - IPA Information-technology Promotion Agency (July 2024)",
-          "TOEIC Listening & Reading 760 points (July 2024)"
+          "Ruby Certified Programmer Gold (Sep 2023)",
+          "Fundamental Information Technology Engineer (Jan 2024)",
+          "Applied Information Technology Engineer (Jul 2024)",
+          "TOEIC L&R 760 points (Jul 2024)"
         ]
       }
     ]
