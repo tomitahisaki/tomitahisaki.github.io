@@ -3,7 +3,7 @@ import type { ResumeData } from '../types/resume';
 export const enData: ResumeData = {
   header: {
     name: "Hisaki Tomita",
-    title: "Web Developer",
+    title: "Software Engineer",
     email: "alltimelow2011@gmail.com",
     linkedin: "https://www.linkedin.com/in/hisaki-tomita-200750287/",
     github: "https://github.com/tomitahisaki"
