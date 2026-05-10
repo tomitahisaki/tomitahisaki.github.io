@@ -54,11 +54,11 @@ export const jaData: ResumeData = {
       {
         name: "技術スタック",
         items: [
-          "バックエンド：Ruby on Rails, Python, Golang",
-          "フロントエンド：React, Vue.js, TypeScript",
-          "データベース：MySQL",
-          "インフラ・ツール：Docker, GitHub, GitHub Actions, Slack, Figma",
-          "開発手法：GitHub Flow, アジャイル開発, スクラム"
+          "バックエンド: Ruby on Rails, Python, Golang",
+          "フロントエンド: React, Vue.js, TypeScript",
+          "データベース: MySQL",
+          "インフラ・ツール: Docker, GitHub, GitHub Actions, Slack, Figma",
+          "開発手法: GitHub Flow, アジャイル開発, スクラム"
         ]
       }
     ]

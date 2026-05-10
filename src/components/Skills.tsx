@@ -13,7 +13,7 @@ export const Skills: React.FC<SkillsProps> = ({ data }) => {
   const renderTechStack = (items: (string | SkillItem)[]) => {
     return items.map((item, index) => {
       if (typeof item === 'string') {
-        const parts = item.split('：');
+        const parts = item.split(':');
         if (parts.length === 2) {
           const techs = parts[1].split(',').map(tech => tech.trim());
           return (
@@ -54,7 +54,7 @@ export const Skills: React.FC<SkillsProps> = ({ data }) => {
                       <>
                         <span className="font-semibold text-gray-700">{item.title}</span>
                         {item.details && item.details.length > 0 && (
-                          <span className="text-gray-600">： {item.details.join(' / ')}</span>
+                          <span className="text-gray-600">: {item.details.join(' / ')}</span>
                         )}
                       </>
                     ) : (
