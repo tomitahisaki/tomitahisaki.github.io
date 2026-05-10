@@ -7,8 +7,8 @@ interface ProjectsProps {
 
 export const Projects: React.FC<ProjectsProps> = ({ data }) => {
   return (
-    <section className="mb-6">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">{data.title}</h2>
+    <section className="mb-5">
+      <h2 className="text-2xl font-bold text-gray-800 mb-3">{data.title}</h2>
       <div className="space-y-4">
         {data.experiences.map((exp, index) => (
           <div key={index} className="bg-gray-50 rounded-lg p-5">
