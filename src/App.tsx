@@ -1,27 +1,17 @@
-import { useState } from 'react';
-import { Resume } from './components/Resume';
-import { jaData, enData } from './locales';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ResumePage } from './pages/ResumePage';
+import { AboutPage } from './pages/AboutPage';
 import './App.css';
 
 function App() {
-  const [currentLanguage, setCurrentLanguage] = useState<'ja' | 'en'>('ja');
-
-  const currentData = currentLanguage === 'ja' ? jaData : enData;
-
-  const handleLanguageChange = (language: 'ja' | 'en') => {
-    setCurrentLanguage(language);
-    // HTMLのlang属性も更新
-    document.documentElement.lang = language;
-    // タイトルも更新
-    document.title = language === 'ja' ? '履歴書 - 冨田久樹' : 'Resume - Hisaki Tomita';
-  };
-
   return (
-    <Resume
-      data={currentData}
-      currentLanguage={currentLanguage}
-      onLanguageChange={handleLanguageChange}
-    />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ResumePage />} />
+        <Route path="/resume" element={<ResumePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
