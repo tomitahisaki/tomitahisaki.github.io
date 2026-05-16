@@ -1,4 +1,4 @@
-import { Top } from '../components/Top';
+import { Top } from '../components/top/Top';
 import { jaTopData } from '../locales';
 
 export function TopPage() {

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Resume } from '../components/Resume';
+import { Resume } from '../components/resume/Resume';
 import { resumeJaData, resumeEnData } from '../locales';
 
 export function ResumePage() {

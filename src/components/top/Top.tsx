@@ -1,9 +1,9 @@
-import { TopData } from '../types/top';
-import { SectionTitle } from './top/SectionTitle';
-import { Card } from './top/Card';
-import { ItemCard } from './top/ItemCard';
-import { TimelineCard } from './top/TimelineCard';
-import { GitHubIcon, LinkedInIcon, EmailIcon, XIcon, HatenaIcon } from './Icons';
+import { TopData } from '../../types/top';
+import { SectionTitle } from './SectionTitle';
+import { Card } from './Card';
+import { ItemCard } from './ItemCard';
+import { TimelineCard } from './TimelineCard';
+import { GitHubIcon, LinkedInIcon, EmailIcon, XIcon, HatenaIcon } from '../shared/Icons';
 
 interface TopProps {
   data: TopData;

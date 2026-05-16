@@ -1,5 +1,5 @@
 import React from 'react';
-import { ResumeData } from '../types/resume';
+import { ResumeData } from '../../types/resume';
 
 interface SummaryProps {
   data: ResumeData['summary'];

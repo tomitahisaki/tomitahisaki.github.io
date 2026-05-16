@@ -1,5 +1,5 @@
 import React from 'react';
-import { ResumeData, SkillItem } from '../types/resume';
+import { ResumeData, SkillItem } from '../../types/resume';
 
 interface SkillsProps {
   data: ResumeData['skills'];
