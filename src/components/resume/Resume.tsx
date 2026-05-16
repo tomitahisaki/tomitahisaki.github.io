@@ -8,7 +8,7 @@ import { Skills } from './Skills';
 import { Projects } from './Projects';
 import { Education } from './Education';
 import { Publications } from './Publications';
-import { ResumeData } from '../types/resume';
+import { ResumeData } from '../../types/resume';
 
 interface ResumeProps {
   data: ResumeData;
