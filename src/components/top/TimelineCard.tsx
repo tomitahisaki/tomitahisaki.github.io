@@ -1,5 +1,5 @@
 import { Card } from './Card';
-import { TimelineItem } from '../../types/about';
+import { TimelineItem } from '../../types/top';
 
 interface TimelineCardProps {
   item: TimelineItem;

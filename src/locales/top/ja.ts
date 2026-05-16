@@ -1,6 +1,6 @@
-import { AboutData } from '../../types/about';
+import { TopData } from '../../types/top';
 
-export const jaAboutData: AboutData = {
+export const jaTopData: TopData = {
   hero: {
     name: '冨田 久樹',
     description: [

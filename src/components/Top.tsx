@@ -1,12 +1,12 @@
-import { AboutData } from '../types/about';
-import { SectionTitle } from './about/SectionTitle';
-import { Card } from './about/Card';
-import { ItemCard } from './about/ItemCard';
-import { TimelineCard } from './about/TimelineCard';
+import { TopData } from '../types/top';
+import { SectionTitle } from './top/SectionTitle';
+import { Card } from './top/Card';
+import { ItemCard } from './top/ItemCard';
+import { TimelineCard } from './top/TimelineCard';
 import { GitHubIcon, LinkedInIcon, EmailIcon, XIcon, HatenaIcon } from './Icons';
 
-interface AboutProps {
-  data: AboutData;
+interface TopProps {
+  data: TopData;
   currentLanguage: 'ja' | 'en';
 }
 
@@ -27,7 +27,7 @@ const getLinkIcon = (label: string) => {
   }
 };
 
-export function About({ data }: AboutProps) {
+export function Top({ data }: TopProps) {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-[1400px] mx-auto px-6 py-8">

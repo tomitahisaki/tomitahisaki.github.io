@@ -14,7 +14,7 @@ export interface LinkItem {
   url: string;
 }
 
-export interface AboutData {
+export interface TopData {
   hero: {
     name: string;
     description: string[];
