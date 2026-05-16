@@ -3,11 +3,29 @@ import { SectionTitle } from './about/SectionTitle';
 import { Card } from './about/Card';
 import { ItemCard } from './about/ItemCard';
 import { TimelineCard } from './about/TimelineCard';
+import { GitHubIcon, LinkedInIcon, EmailIcon, XIcon, HatenaIcon } from './Icons';
 
 interface AboutProps {
   data: AboutData;
   currentLanguage: 'ja' | 'en';
 }
+
+const getLinkIcon = (label: string) => {
+  switch (label) {
+    case 'GitHub':
+      return <GitHubIcon width={20} />;
+    case 'LinkedIn':
+      return <LinkedInIcon width={20} />;
+    case 'Email':
+      return <EmailIcon width={20} />;
+    case 'X':
+      return <XIcon width={20} />;
+    case 'Blog':
+      return <HatenaIcon width={20} />;
+    default:
+      return null;
+  }
+};
 
 export function About({ data }: AboutProps) {
   return (
@@ -21,11 +39,19 @@ export function About({ data }: AboutProps) {
               <h1 className="text-4xl md:text-5xl font-light mb-6 text-gray-900">
                 {data.hero.name}
               </h1>
-              <div className="space-y-1.5 text-gray-600 leading-relaxed">
+              <div className="space-y-1.5 text-gray-600 leading-relaxed mb-4">
                 {data.hero.description.map((line, index) => (
                   <p key={index}>{line}</p>
                 ))}
               </div>
+              
+              {/* Resume Link */}
+              <a
+                href="/resume"
+                className="text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
+              >
+                View Resume →
+              </a>
             </div>
 
             {/* Links Section */}
@@ -34,17 +60,32 @@ export function About({ data }: AboutProps) {
                 {data.links.title}
               </h2>
               <div className="flex flex-wrap gap-4">
-                {data.links.items.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.url}
-                    className="text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
-                    target={link.url.startsWith('http') ? '_blank' : undefined}
-                    rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  >
-                    {link.label}
-                  </a>
-                ))}
+                {data.links.items.map((link, index) => {
+                  const icon = getLinkIcon(link.label);
+                  
+                  return icon ? (
+                    <a
+                      key={index}
+                      href={link.url}
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 border border-gray-200 transition-all duration-300 ease-in-out no-underline hover:bg-gray-200 hover:-translate-y-0.5 hover:shadow-md"
+                      target={link.url.startsWith('http') ? '_blank' : undefined}
+                      rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      title={link.label}
+                    >
+                      {icon}
+                    </a>
+                  ) : (
+                    <a
+                      key={index}
+                      href={link.url}
+                      className="text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
+                      target={link.url.startsWith('http') ? '_blank' : undefined}
+                      rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                    >
+                      {link.label}
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </aside>
