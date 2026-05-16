@@ -127,16 +127,20 @@ export const jaAboutData: AboutData = {
         url: 'https://github.com/tomitahisaki',
       },
       {
+        label: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/hisaki-tomita-200750287/',
+      },
+      {
         label: 'X',
         url: 'https://x.com/Hisakey1992',
       },
       {
-        label: 'Resume',
-        url: '/resume',
-      },
-      {
         label: 'Blog',
         url: 'https://hisakit.hatenablog.com/',
+      },
+      {
+        label: 'Email',
+        url: 'mailto:alltimelow2011@gmail.com',
       },
     ],
   },
