@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Resume } from '../components/Resume';
-import { jaData, enData } from '../locales';
+import { resumeJaData, resumeEnData } from '../locales';
 
 export function ResumePage() {
   const [currentLanguage, setCurrentLanguage] = useState<'ja' | 'en'>('ja');
 
-  const currentData = currentLanguage === 'ja' ? jaData : enData;
+  const currentData = currentLanguage === 'ja' ? resumeJaData : resumeEnData;
 
   const handleLanguageChange = (language: 'ja' | 'en') => {
     setCurrentLanguage(language);

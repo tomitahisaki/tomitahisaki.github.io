@@ -1,4 +1,8 @@
 import { AboutData } from '../types/about';
+import { SectionTitle } from './about/SectionTitle';
+import { Card } from './about/Card';
+import { ItemCard } from './about/ItemCard';
+import { TimelineCard } from './about/TimelineCard';
 
 interface AboutProps {
   data: AboutData;
@@ -7,14 +11,14 @@ interface AboutProps {
 
 export function About({ data }: AboutProps) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       <div className="max-w-[1400px] mx-auto px-6 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Left Sidebar - Fixed on desktop */}
           <aside className="lg:col-span-4 lg:sticky lg:top-8 lg:self-start">
             {/* Hero Section */}
             <div className="mb-8">
-              <h1 className="text-4xl md:text-5xl font-light mb-6 text-gray-800">
+              <h1 className="text-4xl md:text-5xl font-light mb-6 text-gray-900">
                 {data.hero.name}
               </h1>
               <div className="space-y-1.5 text-gray-600 leading-relaxed">
@@ -34,7 +38,7 @@ export function About({ data }: AboutProps) {
                   <a
                     key={index}
                     href={link.url}
-                    className="block text-gray-700 hover:text-gray-900 underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
+                    className="block text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
                     target={link.url.startsWith('http') ? '_blank' : undefined}
                     rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                   >
@@ -49,80 +53,44 @@ export function About({ data }: AboutProps) {
           <main className="lg:col-span-8 space-y-12">
             {/* Journey Section */}
             <section>
-              <h2 className="text-2xl font-light mb-5 text-gray-800">
-                {data.journey.title}
-              </h2>
-              <div className="space-y-6">
+              <SectionTitle>{data.journey.title}</SectionTitle>
+              <div className="space-y-6 ml-4">
                 {data.journey.timeline.map((item, index) => (
-                  <div key={index} className="relative">
-                    <div className="flex items-center gap-3 mb-2">
-                      <p className="text-sm font-medium text-gray-500">
-                        {item.period}
-                      </p>
-                      <span className="text-gray-300">|</span>
-                      <p className="text-sm font-medium text-gray-700">
-                        {item.title}
-                      </p>
-                    </div>
-                    <div className="space-y-1 text-gray-600 leading-relaxed">
-                      {item.description.map((line, lineIndex) => (
-                        <p key={lineIndex}>{line}</p>
-                      ))}
-                    </div>
-                    {index < data.journey.timeline.length - 1 && (
-                      <div className="mt-5 border-b border-gray-200"></div>
-                    )}
-                  </div>
+                  <TimelineCard key={index} item={item} />
                 ))}
               </div>
             </section>
 
             {/* Travel Section */}
             <section>
-              <h2 className="text-2xl font-light mb-5 text-gray-800">
-                {data.travel.title}
-              </h2>
-              <div className="space-y-1 text-gray-600 leading-relaxed">
-                {data.travel.content.map((line, index) => (
-                  <p key={index}>{line}</p>
-                ))}
+              <SectionTitle>{data.travel.title}</SectionTitle>
+              <div className="ml-4">
+                <Card padding="large">
+                  <div className="space-y-1 text-gray-600 leading-relaxed">
+                    {data.travel.content.map((line, index) => (
+                      <p key={index}>{line}</p>
+                    ))}
+                  </div>
+                </Card>
               </div>
             </section>
 
             {/* Interests Section */}
             <section>
-              <h2 className="text-2xl font-light mb-5 text-gray-800">
-                {data.interests.title}
-              </h2>
-              <div className="space-y-3">
+              <SectionTitle>{data.interests.title}</SectionTitle>
+              <div className="space-y-3 ml-4">
                 {data.interests.items.map((item, index) => (
-                  <div key={index}>
-                    <h3 className="text-base font-medium text-gray-800 mb-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
+                  <ItemCard key={index} title={item.title} description={item.description} />
                 ))}
               </div>
             </section>
 
-            {/* Currently Section */}
+            {/* Inspirations Section */}
             <section className="pb-8">
-              <h2 className="text-2xl font-light mb-5 text-gray-800">
-                {data.currently.title}
-              </h2>
-              <div className="space-y-3">
-                {data.currently.items.map((item, index) => (
-                  <div key={index}>
-                    <h3 className="text-base font-medium text-gray-800 mb-1">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      {item.description}
-                    </p>
-                  </div>
+              <SectionTitle>{data.inspirations.title}</SectionTitle>
+              <div className="space-y-3 ml-4">
+                {data.inspirations.items.map((item, index) => (
+                  <ItemCard key={index} title={item.title} description={item.description} />
                 ))}
               </div>
             </section>

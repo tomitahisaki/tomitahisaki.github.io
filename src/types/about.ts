@@ -1,19 +1,27 @@
+export interface TimelineItem {
+  period: string;
+  title: string;
+  description: string[];
+}
+
+export interface ListItem {
+  title: string;
+  description: string;
+}
+
+export interface LinkItem {
+  label: string;
+  url: string;
+}
+
 export interface AboutData {
   hero: {
     name: string;
     description: string[];
   };
-  about: {
-    title: string;
-    content: string[];
-  };
   journey: {
     title: string;
-    timeline: {
-      period: string;
-      title: string;
-      description: string[];
-    }[];
+    timeline: TimelineItem[];
   };
   travel: {
     title: string;
@@ -21,23 +29,14 @@ export interface AboutData {
   };
   interests: {
     title: string;
-    items: {
-      title: string;
-      description: string;
-    }[];
+    items: ListItem[];
   };
-  currently: {
-    title: 'Currently',
-    items: {
-      title: string;
-      description: string;
-    }[];
+  inspirations: {
+    title: string;
+    items: ListItem[];
   };
   links: {
     title: string;
-    items: {
-      label: string;
-      url: string;
-    }[];
+    items: LinkItem[];
   };
 }
