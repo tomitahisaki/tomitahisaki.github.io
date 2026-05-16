@@ -33,12 +33,12 @@ export function About({ data }: AboutProps) {
               <h2 className="text-xl font-light mb-4 text-gray-800">
                 {data.links.title}
               </h2>
-              <div className="space-y-2">
+              <div className="flex flex-wrap gap-4">
                 {data.links.items.map((link, index) => (
                   <a
                     key={index}
                     href={link.url}
-                    className="block text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
+                    className="text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-1 hover:decoration-2 transition-all"
                     target={link.url.startsWith('http') ? '_blank' : undefined}
                     rel={link.url.startsWith('http') ? 'noopener noreferrer' : undefined}
                   >
