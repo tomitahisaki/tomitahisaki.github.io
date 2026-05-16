@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { PdfButton } from './PdfButton';
 import { LanguageToggle } from './LanguageToggle';
 
@@ -16,12 +15,12 @@ export const TopControls: React.FC<TopControlsProps> = ({
 }) => {
   return (
     <div className="flex justify-between items-center mb-6">
-      <Link
-        to="/"
+      <a
+        href="/"
         className="text-blue-600 hover:text-blue-800 underline underline-offset-4 decoration-1 hover:decoration-2 transition-all text-sm"
       >
         ← Top
-      </Link>
+      </a>
       <div className="flex gap-3 items-center">
         <PdfButton
           onClick={onPrint}
